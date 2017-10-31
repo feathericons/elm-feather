@@ -24,9 +24,9 @@ import FeatherIcons
 FeatherIcons.chevronsLeft
 ```
 
-### As selection of function
+### As selection of functions
 
-In case if you just want few icons and don't want additional dependency
+In case if you just want subset of icons or don't want additional dependency
 
 1. Visit https://1602.github.io/elm-feather-icons/
 2. Select icons you need
