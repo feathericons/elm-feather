@@ -1,13 +1,13 @@
 {
     "version": "1.0.0",
     "summary": "Feather icons for elm",
-    "repository": "https://github.com/1602/elm-feather-icons.git",
+    "repository": "https://github.com/1602/elm-feather.git",
     "license": "BSD3",
     "source-directories": [
         "./src"
     ],
     "exposed-modules": [
-        "Icons"
+        "FeatherIcons"
     ],
     "dependencies": {
         "elm-lang/core": "5.0.0 <= v < 6.0.0",
