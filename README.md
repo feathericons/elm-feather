@@ -35,3 +35,13 @@ In case if you just want subset of icons or don't want additional dependency
 #### Demo
 
 [![https://gyazo.com/fa2022e0ff6fae010070e20f2e55f71b](https://i.gyazo.com/fa2022e0ff6fae010070e20f2e55f71b.gif)](https://gyazo.com/fa2022e0ff6fae010070e20f2e55f71b)
+
+## Contribution
+
+This package semi-automatically generated using https://github.com/1602/elm-feather-icons as builder and https://github.com/colebemis/feather as source.
+
+## Roadmap
+
+- [x] UI to search and generate code (https://1602.github.io/elm-feather-icons/)
+- [x] elm package (this package)
+- [ ] automatic generation and publishing of a new package version when new feather-icon arrives (https://github.com/1602/elm-feather/issues/2)
