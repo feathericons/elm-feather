@@ -2,7 +2,10 @@ module FeatherIcons
     exposing
         ( toHtml
         , withClass
+        , withSizeUnit
         , withSize
+        , customIcon
+        , IconBuilder
         , activity
         , airplay
         , alertCircle
@@ -248,7 +251,7 @@ module FeatherIcons
 {-|
 # Icon builder
 
-@docs withSize, withClass, toHtml
+@docs IconBuilder, withSize, withSizeUnit, withClass, toHtml, customIcon
 
 # Icons
 @docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, arrowDownLeft, arrowDownRight, arrowDown, arrowLeft, arrowRight, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, codepen, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, delete, disc, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, fileMinus, filePlus, fileText, file, film, filter, flag, folder, github, gitlab, globe, grid, hash, headphones, heart, helpCircle, home, image, inbox, info, instagram, italic, layers, layout, lifeBuoy, link2, link, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, save, scissors, search, server, settings, share2, share, shield, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, trash2, trash, trendingDown, trendingUp, triangle, tv, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xSquare, x, zap, zoomIn, zoomOut
@@ -262,8 +265,9 @@ import Svg.Attributes exposing (..)
 {-| Customizable attributes of icon
 -}
 type alias IconAttributes =
-    { size : Int
-    , class : String
+    { size : Float
+    , sizeUnit : String
+    , class : Maybe String
     }
 
 
@@ -272,14 +276,27 @@ type alias IconAttributes =
 defaultAttributes : String -> IconAttributes
 defaultAttributes name =
     { size = 24
-    , class = "feather feather-" ++ name
+    , sizeUnit = ""
+    , class = Just <| "feather feather-" ++ name
     }
 
 
+{-| Opaque type representing icon builder
+-}
 type IconBuilder msg
     = IconBuilder
         { attrs : IconAttributes
         , src : List (Svg msg)
+        }
+
+
+{-| Build custom svg icon
+-}
+customIcon : List (Svg msg) -> IconBuilder msg
+customIcon src =
+    IconBuilder
+        { src = src
+        , attrs = IconAttributes 24 "" Nothing
         }
 
 
@@ -289,9 +306,19 @@ type IconBuilder msg
         |> Icon.withSize 10
         |> Icon.toHtml []
 -}
-withSize : Int -> IconBuilder msg -> IconBuilder msg
+withSize : Float -> IconBuilder msg -> IconBuilder msg
 withSize size (IconBuilder { attrs, src }) =
     IconBuilder { attrs = { attrs | size = size }, src = src }
+
+{-| Set unit of size attribute of an icon, one of: "em", "ex", "px", "in", "cm", "mm", "pt", "pc", "%"
+
+    Icon.download
+        |> Icon.withSizeUnit "%"
+        |> Icon.toHtml []
+-}
+withSizeUnit : String -> IconBuilder msg -> IconBuilder msg
+withSizeUnit sizeUnit (IconBuilder { attrs, src }) =
+    IconBuilder { attrs = { attrs | sizeUnit = sizeUnit }, src = src }
 
 
 {-| Overwrite class attribute of an icon
@@ -302,10 +329,10 @@ withSize size (IconBuilder { attrs, src }) =
 -}
 withClass : String -> IconBuilder msg -> IconBuilder msg
 withClass class (IconBuilder { attrs, src }) =
-    IconBuilder { attrs = { attrs | class = class }, src = src }
+    IconBuilder { attrs = { attrs | class = Just class }, src = src }
 
 
-{-| Build icon
+{-| Build icon, ready to use in html. It accepts list of svg attributes, for example in case if you want to add an event handler.
 
     -- default
     Icon.download
@@ -322,10 +349,9 @@ toHtml attributes (IconBuilder { src, attrs }) =
     let
         strSize =
             attrs.size |> toString
-    in
-        svg
-            ([ class attrs.class
-             , fill "none"
+
+        baseAttributes =
+             [ fill "none"
              , height strSize
              , width strSize
              , stroke "currentColor"
@@ -334,8 +360,18 @@ toHtml attributes (IconBuilder { src, attrs }) =
              , strokeWidth "2"
              , viewBox "0 0 24 24"
              ]
-                ++ attributes
-            )
+
+        combinedAttributes =
+            (case attrs.class of
+                Just c ->
+                    (class c) :: baseAttributes
+
+                Nothing ->
+                    baseAttributes
+            ) ++ attributes
+    in
+        svg
+            combinedAttributes
             src
 
 
