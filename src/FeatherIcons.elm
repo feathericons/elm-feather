@@ -1,6 +1,9 @@
 module FeatherIcons
     exposing
-        ( activity
+        ( toHtml
+        , withClass
+        , withSize
+        , activity
         , airplay
         , alertCircle
         , alertOctagon
@@ -243,6 +246,11 @@ module FeatherIcons
         )
 
 {-|
+# Icon builder
+
+@docs withSize, withClass, toHtml
+
+# Icons
 @docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, arrowDownLeft, arrowDownRight, arrowDown, arrowLeft, arrowRight, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, codepen, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, delete, disc, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, fileMinus, filePlus, fileText, file, film, filter, flag, folder, github, gitlab, globe, grid, hash, headphones, heart, helpCircle, home, image, inbox, info, instagram, italic, layers, layout, lifeBuoy, link2, link, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, save, scissors, search, server, settings, share2, share, shield, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, trash2, trash, trendingDown, trendingUp, triangle, tv, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xSquare, x, zap, zoomIn, zoomOut
 -}
 
@@ -251,20 +259,89 @@ import Svg exposing (Svg, svg)
 import Svg.Attributes exposing (..)
 
 
-svgFeatherIcon : String -> List (Svg msg) -> Html msg
-svgFeatherIcon className =
-    svg
-        [ class <| "feather feather-" ++ className
-        , fill "none"
-        , height "24"
-        , stroke "currentColor"
-        , strokeLinecap "round"
-        , strokeLinejoin "round"
-        , strokeWidth "2"
-        , viewBox "0 0 24 24"
-        , width "24"
-        ]
+{-| Customizable attributes of icon
+-}
+type alias IconAttributes =
+    { size : Int
+    , class : String
+    }
 
+
+{-| Default attributes, first argument is icon name
+-}
+defaultAttributes : String -> IconAttributes
+defaultAttributes name =
+    { size = 24
+    , class = "feather feather-" ++ name
+    }
+
+
+type IconBuilder msg
+    = IconBuilder
+        { attrs : IconAttributes
+        , src : List (Svg msg)
+        }
+
+
+{-| Set size attribute of an icon
+
+    Icon.download
+        |> Icon.withSize 10
+        |> Icon.toHtml []
+-}
+withSize : Int -> IconBuilder msg -> IconBuilder msg
+withSize size (IconBuilder { attrs, src }) =
+    IconBuilder { attrs = { attrs | size = size }, src = src }
+
+
+{-| Overwrite class attribute of an icon
+
+    Icon.download
+        |> Icon.withClass "icon-download"
+        |> Icon.toHtml []
+-}
+withClass : String -> IconBuilder msg -> IconBuilder msg
+withClass class (IconBuilder { attrs, src }) =
+    IconBuilder { attrs = { attrs | class = class }, src = src }
+
+
+{-| Build icon
+
+    -- default
+    Icon.download
+        |> Icon.toHtml []
+
+    -- with some attributes
+    Icon.download
+        |> Icon.withSize 10
+        |> Icon.withClass "icon-download"
+        |> Icon.toHtml [ onClick Download ]
+-}
+toHtml : List (Svg.Attribute msg) -> IconBuilder msg -> Html msg
+toHtml attributes (IconBuilder { src, attrs }) =
+    let
+        strSize =
+            attrs.size |> toString
+    in
+        svg
+            ([ class attrs.class
+             , fill "none"
+             , height strSize
+             , width strSize
+             , stroke "currentColor"
+             , strokeLinecap "round"
+             , strokeLinejoin "round"
+             , strokeWidth "2"
+             , viewBox "0 0 24 24"
+             ]
+                ++ attributes
+            )
+            src
+
+
+makeBuilder : String -> List (Svg msg) -> IconBuilder msg
+makeBuilder name src =
+    IconBuilder { attrs = defaultAttributes name, src = src }
 
 {-| activity
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
