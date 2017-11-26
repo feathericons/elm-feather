@@ -346,9 +346,9 @@ makeBuilder name src =
 {-| activity
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
 -}
-activity : Html msg
+activity : IconBuilder msg
 activity =
-    svgFeatherIcon "activity"
+    makeBuilder "activity"
         [ Svg.polyline [ points "22 12 18 12 15 21 9 3 6 12 2 12" ] []
         ]
 
@@ -356,9 +356,9 @@ activity =
 {-| airplay
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
 -}
-airplay : Html msg
+airplay : IconBuilder msg
 airplay =
-    svgFeatherIcon "airplay"
+    makeBuilder "airplay"
         [ Svg.path [ d "M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" ] []
         , Svg.polygon [ points "12 15 17 21 7 21 12 15" ] []
         ]
@@ -367,9 +367,9 @@ airplay =
 {-| alert-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></svg>
 -}
-alertCircle : Html msg
+alertCircle : IconBuilder msg
 alertCircle =
-    svgFeatherIcon "alert-circle"
+    makeBuilder "alert-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "12" ] []
         , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
@@ -379,9 +379,9 @@ alertCircle =
 {-| alert-octagon
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></svg>
 -}
-alertOctagon : Html msg
+alertOctagon : IconBuilder msg
 alertOctagon =
-    svgFeatherIcon "alert-octagon"
+    makeBuilder "alert-octagon"
         [ Svg.polygon [ points "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "12" ] []
         , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
@@ -391,9 +391,9 @@ alertOctagon =
 {-| alert-triangle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12" y2="17"></line></svg>
 -}
-alertTriangle : Html msg
+alertTriangle : IconBuilder msg
 alertTriangle =
-    svgFeatherIcon "alert-triangle"
+    makeBuilder "alert-triangle"
         [ Svg.path [ d "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" ] []
         , Svg.line [ x1 "12", y1 "9", x2 "12", y2 "13" ] []
         , Svg.line [ x1 "12", y1 "17", x2 "12", y2 "17" ] []
@@ -403,9 +403,9 @@ alertTriangle =
 {-| align-center
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line></svg>
 -}
-alignCenter : Html msg
+alignCenter : IconBuilder msg
 alignCenter =
-    svgFeatherIcon "align-center"
+    makeBuilder "align-center"
         [ Svg.line [ x1 "18", y1 "10", x2 "6", y2 "10" ] []
         , Svg.line [ x1 "21", y1 "6", x2 "3", y2 "6" ] []
         , Svg.line [ x1 "21", y1 "14", x2 "3", y2 "14" ] []
@@ -416,9 +416,9 @@ alignCenter =
 {-| align-justify
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
 -}
-alignJustify : Html msg
+alignJustify : IconBuilder msg
 alignJustify =
-    svgFeatherIcon "align-justify"
+    makeBuilder "align-justify"
         [ Svg.line [ x1 "21", y1 "10", x2 "3", y2 "10" ] []
         , Svg.line [ x1 "21", y1 "6", x2 "3", y2 "6" ] []
         , Svg.line [ x1 "21", y1 "14", x2 "3", y2 "14" ] []
@@ -429,9 +429,9 @@ alignJustify =
 {-| align-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
 -}
-alignLeft : Html msg
+alignLeft : IconBuilder msg
 alignLeft =
-    svgFeatherIcon "align-left"
+    makeBuilder "align-left"
         [ Svg.line [ x1 "17", y1 "10", x2 "3", y2 "10" ] []
         , Svg.line [ x1 "21", y1 "6", x2 "3", y2 "6" ] []
         , Svg.line [ x1 "21", y1 "14", x2 "3", y2 "14" ] []
@@ -442,9 +442,9 @@ alignLeft =
 {-| align-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg>
 -}
-alignRight : Html msg
+alignRight : IconBuilder msg
 alignRight =
-    svgFeatherIcon "align-right"
+    makeBuilder "align-right"
         [ Svg.line [ x1 "21", y1 "10", x2 "7", y2 "10" ] []
         , Svg.line [ x1 "21", y1 "6", x2 "3", y2 "6" ] []
         , Svg.line [ x1 "21", y1 "14", x2 "3", y2 "14" ] []
@@ -455,9 +455,9 @@ alignRight =
 {-| anchor
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path></svg>
 -}
-anchor : Html msg
+anchor : IconBuilder msg
 anchor =
-    svgFeatherIcon "anchor"
+    makeBuilder "anchor"
         [ Svg.circle [ cx "12", cy "5", r "3" ] []
         , Svg.line [ x1 "12", y1 "22", x2 "12", y2 "8" ] []
         , Svg.path [ d "M5 12H2a10 10 0 0 0 20 0h-3" ] []
@@ -467,9 +467,9 @@ anchor =
 {-| aperture
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
 -}
-aperture : Html msg
+aperture : IconBuilder msg
 aperture =
-    svgFeatherIcon "aperture"
+    makeBuilder "aperture"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "14.31", y1 "8", x2 "20.05", y2 "17.94" ] []
         , Svg.line [ x1 "9.69", y1 "8", x2 "21.17", y2 "8" ] []
@@ -483,9 +483,9 @@ aperture =
 {-| arrow-down-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="18" y1="6" x2="6" y2="18"></line><polyline points="15 18 6 18 6 9"></polyline></svg>
 -}
-arrowDownLeft : Html msg
+arrowDownLeft : IconBuilder msg
 arrowDownLeft =
-    svgFeatherIcon "arrow-down-left"
+    makeBuilder "arrow-down-left"
         [ Svg.line [ x1 "18", y1 "6", x2 "6", y2 "18" ] []
         , Svg.polyline [ points "15 18 6 18 6 9" ] []
         ]
@@ -494,9 +494,9 @@ arrowDownLeft =
 {-| arrow-down-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="6" y1="6" x2="18" y2="18"></line><polyline points="9 18 18 18 18 9"></polyline></svg>
 -}
-arrowDownRight : Html msg
+arrowDownRight : IconBuilder msg
 arrowDownRight =
-    svgFeatherIcon "arrow-down-right"
+    makeBuilder "arrow-down-right"
         [ Svg.line [ x1 "6", y1 "6", x2 "18", y2 "18" ] []
         , Svg.polyline [ points "9 18 18 18 18 9" ] []
         ]
@@ -505,9 +505,9 @@ arrowDownRight =
 {-| arrow-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="12" y1="4" x2="12" y2="20"></line><polyline points="18 14 12 20 6 14"></polyline></svg>
 -}
-arrowDown : Html msg
+arrowDown : IconBuilder msg
 arrowDown =
-    svgFeatherIcon "arrow-down"
+    makeBuilder "arrow-down"
         [ Svg.line [ x1 "12", y1 "4", x2 "12", y2 "20" ] []
         , Svg.polyline [ points "18 14 12 20 6 14" ] []
         ]
@@ -516,9 +516,9 @@ arrowDown =
 {-| arrow-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="20" y1="12" x2="4" y2="12"></line><polyline points="10 18 4 12 10 6"></polyline></svg>
 -}
-arrowLeft : Html msg
+arrowLeft : IconBuilder msg
 arrowLeft =
-    svgFeatherIcon "arrow-left"
+    makeBuilder "arrow-left"
         [ Svg.line [ x1 "20", y1 "12", x2 "4", y2 "12" ] []
         , Svg.polyline [ points "10 18 4 12 10 6" ] []
         ]
@@ -527,9 +527,9 @@ arrowLeft =
 {-| arrow-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="14 6 20 12 14 18"></polyline></svg>
 -}
-arrowRight : Html msg
+arrowRight : IconBuilder msg
 arrowRight =
-    svgFeatherIcon "arrow-right"
+    makeBuilder "arrow-right"
         [ Svg.line [ x1 "4", y1 "12", x2 "20", y2 "12" ] []
         , Svg.polyline [ points "14 6 20 12 14 18" ] []
         ]
@@ -538,9 +538,9 @@ arrowRight =
 {-| arrow-up-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="18" y1="18" x2="6" y2="6"></line><polyline points="15 6 6 6 6 15"></polyline></svg>
 -}
-arrowUpLeft : Html msg
+arrowUpLeft : IconBuilder msg
 arrowUpLeft =
-    svgFeatherIcon "arrow-up-left"
+    makeBuilder "arrow-up-left"
         [ Svg.line [ x1 "18", y1 "18", x2 "6", y2 "6" ] []
         , Svg.polyline [ points "15 6 6 6 6 15" ] []
         ]
@@ -549,9 +549,9 @@ arrowUpLeft =
 {-| arrow-up-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="6" y1="18" x2="18" y2="6"></line><polyline points="9 6 18 6 18 15"></polyline></svg>
 -}
-arrowUpRight : Html msg
+arrowUpRight : IconBuilder msg
 arrowUpRight =
-    svgFeatherIcon "arrow-up-right"
+    makeBuilder "arrow-up-right"
         [ Svg.line [ x1 "6", y1 "18", x2 "18", y2 "6" ] []
         , Svg.polyline [ points "9 6 18 6 18 15" ] []
         ]
@@ -560,9 +560,9 @@ arrowUpRight =
 {-| arrow-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="12" y1="20" x2="12" y2="4"></line><polyline points="6 10 12 4 18 10"></polyline></svg>
 -}
-arrowUp : Html msg
+arrowUp : IconBuilder msg
 arrowUp =
-    svgFeatherIcon "arrow-up"
+    makeBuilder "arrow-up"
         [ Svg.line [ x1 "12", y1 "20", x2 "12", y2 "4" ] []
         , Svg.polyline [ points "6 10 12 4 18 10" ] []
         ]
@@ -571,9 +571,9 @@ arrowUp =
 {-| at-sign
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="4"></circle><path d="M16 12v1a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
 -}
-atSign : Html msg
+atSign : IconBuilder msg
 atSign =
-    svgFeatherIcon "at-sign"
+    makeBuilder "at-sign"
         [ Svg.circle [ cx "12", cy "12", r "4" ] []
         , Svg.path [ d "M16 12v1a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94" ] []
         ]
@@ -582,9 +582,9 @@ atSign =
 {-| award
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
 -}
-award : Html msg
+award : IconBuilder msg
 award =
-    svgFeatherIcon "award"
+    makeBuilder "award"
         [ Svg.circle [ cx "12", cy "8", r "7" ] []
         , Svg.polyline [ points "8.21 13.89 7 23 12 20 17 23 15.79 13.88" ] []
         ]
@@ -593,9 +593,9 @@ award =
 {-| bar-chart-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="10" y="3" width="4" height="18"></rect><rect x="18" y="8" width="4" height="13"></rect><rect x="2" y="13" width="4" height="8"></rect></svg>
 -}
-barChart2 : Html msg
+barChart2 : IconBuilder msg
 barChart2 =
-    svgFeatherIcon "bar-chart-2"
+    makeBuilder "bar-chart-2"
         [ Svg.rect [ Svg.Attributes.x "10", y "3", width "4", height "18" ] []
         , Svg.rect [ Svg.Attributes.x "18", y "8", width "4", height "13" ] []
         , Svg.rect [ Svg.Attributes.x "2", y "13", width "4", height "8" ] []
@@ -605,9 +605,9 @@ barChart2 =
 {-| bar-chart
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="18" y="3" width="4" height="18"></rect><rect x="10" y="8" width="4" height="13"></rect><rect x="2" y="13" width="4" height="8"></rect></svg>
 -}
-barChart : Html msg
+barChart : IconBuilder msg
 barChart =
-    svgFeatherIcon "bar-chart"
+    makeBuilder "bar-chart"
         [ Svg.rect [ Svg.Attributes.x "18", y "3", width "4", height "18" ] []
         , Svg.rect [ Svg.Attributes.x "10", y "8", width "4", height "13" ] []
         , Svg.rect [ Svg.Attributes.x "2", y "13", width "4", height "8" ] []
@@ -617,9 +617,9 @@ barChart =
 {-| battery-charging
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
 -}
-batteryCharging : Html msg
+batteryCharging : IconBuilder msg
 batteryCharging =
-    svgFeatherIcon "battery-charging"
+    makeBuilder "battery-charging"
         [ Svg.path [ d "M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19" ] []
         , Svg.line [ x1 "23", y1 "13", x2 "23", y2 "11" ] []
         , Svg.polyline [ points "11 6 7 12 13 12 9 18" ] []
@@ -629,9 +629,9 @@ batteryCharging =
 {-| battery
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line></svg>
 -}
-battery : Html msg
+battery : IconBuilder msg
 battery =
-    svgFeatherIcon "battery"
+    makeBuilder "battery"
         [ Svg.rect [ Svg.Attributes.x "1", y "6", width "18", height "12", rx "2", ry "2" ] []
         , Svg.line [ x1 "23", y1 "13", x2 "23", y2 "11" ] []
         ]
@@ -640,9 +640,9 @@ battery =
 {-| bell-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 -}
-bellOff : Html msg
+bellOff : IconBuilder msg
 bellOff =
-    svgFeatherIcon "bell-off"
+    makeBuilder "bell-off"
         [ Svg.path [ d "M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0" ] []
         , Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         ]
@@ -651,9 +651,9 @@ bellOff =
 {-| bell
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg>
 -}
-bell : Html msg
+bell : IconBuilder msg
 bell =
-    svgFeatherIcon "bell"
+    makeBuilder "bell"
         [ Svg.path [ d "M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0" ] []
         ]
 
@@ -661,9 +661,9 @@ bell =
 {-| bluetooth
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline></svg>
 -}
-bluetooth : Html msg
+bluetooth : IconBuilder msg
 bluetooth =
-    svgFeatherIcon "bluetooth"
+    makeBuilder "bluetooth"
         [ Svg.polyline [ points "6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5" ] []
         ]
 
@@ -671,9 +671,9 @@ bluetooth =
 {-| bold
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path></svg>
 -}
-bold : Html msg
+bold : IconBuilder msg
 bold =
-    svgFeatherIcon "bold"
+    makeBuilder "bold"
         [ Svg.path [ d "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" ] []
         , Svg.path [ d "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" ] []
         ]
@@ -682,9 +682,9 @@ bold =
 {-| book
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
 -}
-book : Html msg
+book : IconBuilder msg
 book =
-    svgFeatherIcon "book"
+    makeBuilder "book"
         [ Svg.path [ d "M4 19.5A2.5 2.5 0 0 1 6.5 17H20" ] []
         , Svg.path [ d "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" ] []
         ]
@@ -693,9 +693,9 @@ book =
 {-| bookmark
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
 -}
-bookmark : Html msg
+bookmark : IconBuilder msg
 bookmark =
-    svgFeatherIcon "bookmark"
+    makeBuilder "bookmark"
         [ Svg.path [ d "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" ] []
         ]
 
@@ -703,9 +703,9 @@ bookmark =
 {-| box
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line></svg>
 -}
-box : Html msg
+box : IconBuilder msg
 box =
-    svgFeatherIcon "box"
+    makeBuilder "box"
         [ Svg.path [ d "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" ] []
         , Svg.polyline [ points "2.32 6.16 12 11 21.68 6.16" ] []
         , Svg.line [ x1 "12", y1 "22.76", x2 "12", y2 "11" ] []
@@ -715,9 +715,9 @@ box =
 {-| briefcase
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
 -}
-briefcase : Html msg
+briefcase : IconBuilder msg
 briefcase =
-    svgFeatherIcon "briefcase"
+    makeBuilder "briefcase"
         [ Svg.rect [ Svg.Attributes.x "2", y "7", width "20", height "14", rx "2", ry "2" ] []
         , Svg.path [ d "M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" ] []
         ]
@@ -726,9 +726,9 @@ briefcase =
 {-| calendar
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
 -}
-calendar : Html msg
+calendar : IconBuilder msg
 calendar =
-    svgFeatherIcon "calendar"
+    makeBuilder "calendar"
         [ Svg.rect [ Svg.Attributes.x "3", y "4", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "16", y1 "2", x2 "16", y2 "6" ] []
         , Svg.line [ x1 "8", y1 "2", x2 "8", y2 "6" ] []
@@ -739,9 +739,9 @@ calendar =
 {-| camera-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path></svg>
 -}
-cameraOff : Html msg
+cameraOff : IconBuilder msg
 cameraOff =
-    svgFeatherIcon "camera-off"
+    makeBuilder "camera-off"
         [ Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         , Svg.path [ d "M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56" ] []
         ]
@@ -750,9 +750,9 @@ cameraOff =
 {-| camera
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
 -}
-camera : Html msg
+camera : IconBuilder msg
 camera =
-    svgFeatherIcon "camera"
+    makeBuilder "camera"
         [ Svg.path [ d "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" ] []
         , Svg.circle [ cx "12", cy "13", r "4" ] []
         ]
@@ -761,9 +761,9 @@ camera =
 {-| cast
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2" y2="20"></line></svg>
 -}
-cast : Html msg
+cast : IconBuilder msg
 cast =
-    svgFeatherIcon "cast"
+    makeBuilder "cast"
         [ Svg.path [ d "M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" ] []
         , Svg.line [ x1 "2", y1 "20", x2 "2", y2 "20" ] []
         ]
@@ -772,9 +772,9 @@ cast =
 {-| check-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22 11.07V12a10 10 0 1 1-5.93-9.14"></path><polyline points="23 3 12 14 9 11"></polyline></svg>
 -}
-checkCircle : Html msg
+checkCircle : IconBuilder msg
 checkCircle =
-    svgFeatherIcon "check-circle"
+    makeBuilder "check-circle"
         [ Svg.path [ d "M22 11.07V12a10 10 0 1 1-5.93-9.14" ] []
         , Svg.polyline [ points "23 3 12 14 9 11" ] []
         ]
@@ -783,9 +783,9 @@ checkCircle =
 {-| check-square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="9 11 12 14 23 3"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
 -}
-checkSquare : Html msg
+checkSquare : IconBuilder msg
 checkSquare =
-    svgFeatherIcon "check-square"
+    makeBuilder "check-square"
         [ Svg.polyline [ points "9 11 12 14 23 3" ] []
         , Svg.path [ d "M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" ] []
         ]
@@ -794,9 +794,9 @@ checkSquare =
 {-| check
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="20 6 9 17 4 12"></polyline></svg>
 -}
-check : Html msg
+check : IconBuilder msg
 check =
-    svgFeatherIcon "check"
+    makeBuilder "check"
         [ Svg.polyline [ points "20 6 9 17 4 12" ] []
         ]
 
@@ -804,9 +804,9 @@ check =
 {-| chevron-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="6 9 12 15 18 9"></polyline></svg>
 -}
-chevronDown : Html msg
+chevronDown : IconBuilder msg
 chevronDown =
-    svgFeatherIcon "chevron-down"
+    makeBuilder "chevron-down"
         [ Svg.polyline [ points "6 9 12 15 18 9" ] []
         ]
 
@@ -814,9 +814,9 @@ chevronDown =
 {-| chevron-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="15 18 9 12 15 6"></polyline></svg>
 -}
-chevronLeft : Html msg
+chevronLeft : IconBuilder msg
 chevronLeft =
-    svgFeatherIcon "chevron-left"
+    makeBuilder "chevron-left"
         [ Svg.polyline [ points "15 18 9 12 15 6" ] []
         ]
 
@@ -824,9 +824,9 @@ chevronLeft =
 {-| chevron-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="9 18 15 12 9 6"></polyline></svg>
 -}
-chevronRight : Html msg
+chevronRight : IconBuilder msg
 chevronRight =
-    svgFeatherIcon "chevron-right"
+    makeBuilder "chevron-right"
         [ Svg.polyline [ points "9 18 15 12 9 6" ] []
         ]
 
@@ -834,9 +834,9 @@ chevronRight =
 {-| chevron-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="18 15 12 9 6 15"></polyline></svg>
 -}
-chevronUp : Html msg
+chevronUp : IconBuilder msg
 chevronUp =
-    svgFeatherIcon "chevron-up"
+    makeBuilder "chevron-up"
         [ Svg.polyline [ points "18 15 12 9 6 15" ] []
         ]
 
@@ -844,9 +844,9 @@ chevronUp =
 {-| chevrons-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
 -}
-chevronsDown : Html msg
+chevronsDown : IconBuilder msg
 chevronsDown =
-    svgFeatherIcon "chevrons-down"
+    makeBuilder "chevrons-down"
         [ Svg.polyline [ points "7 13 12 18 17 13" ] []
         , Svg.polyline [ points "7 6 12 11 17 6" ] []
         ]
@@ -855,9 +855,9 @@ chevronsDown =
 {-| chevrons-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
 -}
-chevronsLeft : Html msg
+chevronsLeft : IconBuilder msg
 chevronsLeft =
-    svgFeatherIcon "chevrons-left"
+    makeBuilder "chevrons-left"
         [ Svg.polyline [ points "11 17 6 12 11 7" ] []
         , Svg.polyline [ points "18 17 13 12 18 7" ] []
         ]
@@ -866,9 +866,9 @@ chevronsLeft =
 {-| chevrons-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
 -}
-chevronsRight : Html msg
+chevronsRight : IconBuilder msg
 chevronsRight =
-    svgFeatherIcon "chevrons-right"
+    makeBuilder "chevrons-right"
         [ Svg.polyline [ points "13 17 18 12 13 7" ] []
         , Svg.polyline [ points "6 17 11 12 6 7" ] []
         ]
@@ -877,9 +877,9 @@ chevronsRight =
 {-| chevrons-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
 -}
-chevronsUp : Html msg
+chevronsUp : IconBuilder msg
 chevronsUp =
-    svgFeatherIcon "chevrons-up"
+    makeBuilder "chevrons-up"
         [ Svg.polyline [ points "17 11 12 6 7 11" ] []
         , Svg.polyline [ points "17 18 12 13 7 18" ] []
         ]
@@ -888,9 +888,9 @@ chevronsUp =
 {-| chrome
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
 -}
-chrome : Html msg
+chrome : IconBuilder msg
 chrome =
-    svgFeatherIcon "chrome"
+    makeBuilder "chrome"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.circle [ cx "12", cy "12", r "4" ] []
         , Svg.line [ x1 "21.17", y1 "8", x2 "12", y2 "8" ] []
@@ -902,9 +902,9 @@ chrome =
 {-| circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle></svg>
 -}
-circle : Html msg
+circle : IconBuilder msg
 circle =
-    svgFeatherIcon "circle"
+    makeBuilder "circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         ]
 
@@ -912,9 +912,9 @@ circle =
 {-| clipboard
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
 -}
-clipboard : Html msg
+clipboard : IconBuilder msg
 clipboard =
-    svgFeatherIcon "clipboard"
+    makeBuilder "clipboard"
         [ Svg.path [ d "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" ] []
         , Svg.rect [ Svg.Attributes.x "8", y "2", width "8", height "4", rx "1", ry "1" ] []
         ]
@@ -923,9 +923,9 @@ clipboard =
 {-| clock
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 15 15"></polyline></svg>
 -}
-clock : Html msg
+clock : IconBuilder msg
 clock =
-    svgFeatherIcon "clock"
+    makeBuilder "clock"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.polyline [ points "12 6 12 12 15 15" ] []
         ]
@@ -934,9 +934,9 @@ clock =
 {-| cloud-drizzle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path></svg>
 -}
-cloudDrizzle : Html msg
+cloudDrizzle : IconBuilder msg
 cloudDrizzle =
-    svgFeatherIcon "cloud-drizzle"
+    makeBuilder "cloud-drizzle"
         [ Svg.line [ x1 "8", y1 "19", x2 "8", y2 "21" ] []
         , Svg.line [ x1 "8", y1 "13", x2 "8", y2 "15" ] []
         , Svg.line [ x1 "16", y1 "19", x2 "16", y2 "21" ] []
@@ -950,9 +950,9 @@ cloudDrizzle =
 {-| cloud-lightning
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline></svg>
 -}
-cloudLightning : Html msg
+cloudLightning : IconBuilder msg
 cloudLightning =
-    svgFeatherIcon "cloud-lightning"
+    makeBuilder "cloud-lightning"
         [ Svg.path [ d "M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9" ] []
         , Svg.polyline [ points "13 11 9 17 15 17 11 23" ] []
         ]
@@ -961,9 +961,9 @@ cloudLightning =
 {-| cloud-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 -}
-cloudOff : Html msg
+cloudOff : IconBuilder msg
 cloudOff =
-    svgFeatherIcon "cloud-off"
+    makeBuilder "cloud-off"
         [ Svg.path [ d "M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3" ] []
         , Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         ]
@@ -972,9 +972,9 @@ cloudOff =
 {-| cloud-rain
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path></svg>
 -}
-cloudRain : Html msg
+cloudRain : IconBuilder msg
 cloudRain =
-    svgFeatherIcon "cloud-rain"
+    makeBuilder "cloud-rain"
         [ Svg.line [ x1 "16", y1 "13", x2 "16", y2 "21" ] []
         , Svg.line [ x1 "8", y1 "13", x2 "8", y2 "21" ] []
         , Svg.line [ x1 "12", y1 "15", x2 "12", y2 "23" ] []
@@ -985,9 +985,9 @@ cloudRain =
 {-| cloud-snow
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="8" y1="20" x2="8" y2="20"></line><line x1="12" y1="18" x2="12" y2="18"></line><line x1="12" y1="22" x2="12" y2="22"></line><line x1="16" y1="16" x2="16" y2="16"></line><line x1="16" y1="20" x2="16" y2="20"></line></svg>
 -}
-cloudSnow : Html msg
+cloudSnow : IconBuilder msg
 cloudSnow =
-    svgFeatherIcon "cloud-snow"
+    makeBuilder "cloud-snow"
         [ Svg.path [ d "M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" ] []
         , Svg.line [ x1 "8", y1 "16", x2 "8", y2 "16" ] []
         , Svg.line [ x1 "8", y1 "20", x2 "8", y2 "20" ] []
@@ -1001,9 +1001,9 @@ cloudSnow =
 {-| cloud
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
 -}
-cloud : Html msg
+cloud : IconBuilder msg
 cloud =
-    svgFeatherIcon "cloud"
+    makeBuilder "cloud"
         [ Svg.path [ d "M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" ] []
         ]
 
@@ -1011,9 +1011,9 @@ cloud =
 {-| codepen
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
 -}
-codepen : Html msg
+codepen : IconBuilder msg
 codepen =
-    svgFeatherIcon "codepen"
+    makeBuilder "codepen"
         [ Svg.polygon [ points "12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" ] []
         , Svg.line [ x1 "12", y1 "22", x2 "12", y2 "15.5" ] []
         , Svg.polyline [ points "22 8.5 12 15.5 2 8.5" ] []
@@ -1025,9 +1025,9 @@ codepen =
 {-| command
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
 -}
-command : Html msg
+command : IconBuilder msg
 command =
-    svgFeatherIcon "command"
+    makeBuilder "command"
         [ Svg.path [ d "M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z" ] []
         ]
 
@@ -1035,9 +1035,9 @@ command =
 {-| compass
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
 -}
-compass : Html msg
+compass : IconBuilder msg
 compass =
-    svgFeatherIcon "compass"
+    makeBuilder "compass"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.polygon [ points "16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" ] []
         ]
@@ -1046,9 +1046,9 @@ compass =
 {-| copy
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
 -}
-copy : Html msg
+copy : IconBuilder msg
 copy =
-    svgFeatherIcon "copy"
+    makeBuilder "copy"
         [ Svg.rect [ Svg.Attributes.x "9", y "9", width "13", height "13", rx "2", ry "2" ] []
         , Svg.path [ d "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" ] []
         ]
@@ -1057,9 +1057,9 @@ copy =
 {-| corner-down-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path></svg>
 -}
-cornerDownLeft : Html msg
+cornerDownLeft : IconBuilder msg
 cornerDownLeft =
-    svgFeatherIcon "corner-down-left"
+    makeBuilder "corner-down-left"
         [ Svg.polyline [ points "9 10 4 15 9 20" ] []
         , Svg.path [ d "M20 4v7a4 4 0 0 1-4 4H4" ] []
         ]
@@ -1068,9 +1068,9 @@ cornerDownLeft =
 {-| corner-down-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path></svg>
 -}
-cornerDownRight : Html msg
+cornerDownRight : IconBuilder msg
 cornerDownRight =
-    svgFeatherIcon "corner-down-right"
+    makeBuilder "corner-down-right"
         [ Svg.polyline [ points "15 10 20 15 15 20" ] []
         , Svg.path [ d "M4 4v7a4 4 0 0 0 4 4h12" ] []
         ]
@@ -1079,9 +1079,9 @@ cornerDownRight =
 {-| corner-left-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path></svg>
 -}
-cornerLeftDown : Html msg
+cornerLeftDown : IconBuilder msg
 cornerLeftDown =
-    svgFeatherIcon "corner-left-down"
+    makeBuilder "corner-left-down"
         [ Svg.polyline [ points "14 15 9 20 4 15" ] []
         , Svg.path [ d "M20 4h-7a4 4 0 0 0-4 4v12" ] []
         ]
@@ -1090,9 +1090,9 @@ cornerLeftDown =
 {-| corner-left-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path></svg>
 -}
-cornerLeftUp : Html msg
+cornerLeftUp : IconBuilder msg
 cornerLeftUp =
-    svgFeatherIcon "corner-left-up"
+    makeBuilder "corner-left-up"
         [ Svg.polyline [ points "14 9 9 4 4 9" ] []
         , Svg.path [ d "M20 20h-7a4 4 0 0 1-4-4V4" ] []
         ]
@@ -1101,9 +1101,9 @@ cornerLeftUp =
 {-| corner-right-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path></svg>
 -}
-cornerRightDown : Html msg
+cornerRightDown : IconBuilder msg
 cornerRightDown =
-    svgFeatherIcon "corner-right-down"
+    makeBuilder "corner-right-down"
         [ Svg.polyline [ points "10 15 15 20 20 15" ] []
         , Svg.path [ d "M4 4h7a4 4 0 0 1 4 4v12" ] []
         ]
@@ -1112,9 +1112,9 @@ cornerRightDown =
 {-| corner-right-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path></svg>
 -}
-cornerRightUp : Html msg
+cornerRightUp : IconBuilder msg
 cornerRightUp =
-    svgFeatherIcon "corner-right-up"
+    makeBuilder "corner-right-up"
         [ Svg.polyline [ points "10 9 15 4 20 9" ] []
         , Svg.path [ d "M4 20h7a4 4 0 0 0 4-4V4" ] []
         ]
@@ -1123,9 +1123,9 @@ cornerRightUp =
 {-| corner-up-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path></svg>
 -}
-cornerUpLeft : Html msg
+cornerUpLeft : IconBuilder msg
 cornerUpLeft =
-    svgFeatherIcon "corner-up-left"
+    makeBuilder "corner-up-left"
         [ Svg.polyline [ points "9 14 4 9 9 4" ] []
         , Svg.path [ d "M20 20v-7a4 4 0 0 0-4-4H4" ] []
         ]
@@ -1134,9 +1134,9 @@ cornerUpLeft =
 {-| corner-up-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path></svg>
 -}
-cornerUpRight : Html msg
+cornerUpRight : IconBuilder msg
 cornerUpRight =
-    svgFeatherIcon "corner-up-right"
+    makeBuilder "corner-up-right"
         [ Svg.polyline [ points "15 14 20 9 15 4" ] []
         , Svg.path [ d "M4 20v-7a4 4 0 0 1 4-4h12" ] []
         ]
@@ -1145,9 +1145,9 @@ cornerUpRight =
 {-| cpu
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
 -}
-cpu : Html msg
+cpu : IconBuilder msg
 cpu =
-    svgFeatherIcon "cpu"
+    makeBuilder "cpu"
         [ Svg.rect [ Svg.Attributes.x "4", y "4", width "16", height "16", rx "2", ry "2" ] []
         , Svg.rect [ Svg.Attributes.x "9", y "9", width "6", height "6" ] []
         , Svg.line [ x1 "9", y1 "1", x2 "9", y2 "4" ] []
@@ -1164,9 +1164,9 @@ cpu =
 {-| credit-card
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
 -}
-creditCard : Html msg
+creditCard : IconBuilder msg
 creditCard =
-    svgFeatherIcon "credit-card"
+    makeBuilder "credit-card"
         [ Svg.rect [ Svg.Attributes.x "1", y "4", width "22", height "16", rx "2", ry "2" ] []
         , Svg.line [ x1 "1", y1 "10", x2 "23", y2 "10" ] []
         ]
@@ -1175,9 +1175,9 @@ creditCard =
 {-| crop
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path></svg>
 -}
-crop : Html msg
+crop : IconBuilder msg
 crop =
-    svgFeatherIcon "crop"
+    makeBuilder "crop"
         [ Svg.path [ d "M6.13 1L6 16a2 2 0 0 0 2 2h15" ] []
         , Svg.path [ d "M1 6.13L16 6a2 2 0 0 1 2 2v15" ] []
         ]
@@ -1186,9 +1186,9 @@ crop =
 {-| crosshair
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
 -}
-crosshair : Html msg
+crosshair : IconBuilder msg
 crosshair =
-    svgFeatherIcon "crosshair"
+    makeBuilder "crosshair"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "22", y1 "12", x2 "18", y2 "12" ] []
         , Svg.line [ x1 "6", y1 "12", x2 "2", y2 "12" ] []
@@ -1200,9 +1200,9 @@ crosshair =
 {-| delete
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line></svg>
 -}
-delete : Html msg
+delete : IconBuilder msg
 delete =
-    svgFeatherIcon "delete"
+    makeBuilder "delete"
         [ Svg.path [ d "M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" ] []
         , Svg.line [ x1 "18", y1 "9", x2 "12", y2 "15" ] []
         , Svg.line [ x1 "12", y1 "9", x2 "18", y2 "15" ] []
@@ -1212,9 +1212,9 @@ delete =
 {-| disc
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
 -}
-disc : Html msg
+disc : IconBuilder msg
 disc =
-    svgFeatherIcon "disc"
+    makeBuilder "disc"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.circle [ cx "12", cy "12", r "3" ] []
         ]
@@ -1223,9 +1223,9 @@ disc =
 {-| download-cloud
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
 -}
-downloadCloud : Html msg
+downloadCloud : IconBuilder msg
 downloadCloud =
-    svgFeatherIcon "download-cloud"
+    makeBuilder "download-cloud"
         [ Svg.polyline [ points "8 17 12 21 16 17" ] []
         , Svg.line [ x1 "12", y1 "12", x2 "12", y2 "21" ] []
         , Svg.path [ d "M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29" ] []
@@ -1235,9 +1235,9 @@ downloadCloud =
 {-| download
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"></path><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="2" x2="12" y2="16"></line></svg>
 -}
-download : Html msg
+download : IconBuilder msg
 download =
-    svgFeatherIcon "download"
+    makeBuilder "download"
         [ Svg.path [ d "M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3" ] []
         , Svg.polyline [ points "8 12 12 16 16 12" ] []
         , Svg.line [ x1 "12", y1 "2", x2 "12", y2 "16" ] []
@@ -1247,9 +1247,9 @@ download =
 {-| droplet
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
 -}
-droplet : Html msg
+droplet : IconBuilder msg
 droplet =
-    svgFeatherIcon "droplet"
+    makeBuilder "droplet"
         [ Svg.path [ d "M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" ] []
         ]
 
@@ -1257,9 +1257,9 @@ droplet =
 {-| edit-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon></svg>
 -}
-edit2 : Html msg
+edit2 : IconBuilder msg
 edit2 =
-    svgFeatherIcon "edit-2"
+    makeBuilder "edit-2"
         [ Svg.polygon [ points "16 3 21 8 8 21 3 21 3 16 16 3" ] []
         ]
 
@@ -1267,9 +1267,9 @@ edit2 =
 {-| edit-3
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
 -}
-edit3 : Html msg
+edit3 : IconBuilder msg
 edit3 =
-    svgFeatherIcon "edit-3"
+    makeBuilder "edit-3"
         [ Svg.polygon [ points "14 2 18 6 7 17 3 17 3 13 14 2" ] []
         , Svg.line [ x1 "3", y1 "22", x2 "21", y2 "22" ] []
         ]
@@ -1278,9 +1278,9 @@ edit3 =
 {-| edit
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
 -}
-edit : Html msg
+edit : IconBuilder msg
 edit =
-    svgFeatherIcon "edit"
+    makeBuilder "edit"
         [ Svg.path [ d "M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34" ] []
         , Svg.polygon [ points "18 2 22 6 12 16 8 16 8 12 18 2" ] []
         ]
@@ -1289,9 +1289,9 @@ edit =
 {-| external-link
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 -}
-externalLink : Html msg
+externalLink : IconBuilder msg
 externalLink =
-    svgFeatherIcon "external-link"
+    makeBuilder "external-link"
         [ Svg.path [ d "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" ] []
         , Svg.polyline [ points "15 3 21 3 21 9" ] []
         , Svg.line [ x1 "10", y1 "14", x2 "21", y2 "3" ] []
@@ -1301,9 +1301,9 @@ externalLink =
 {-| eye-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 -}
-eyeOff : Html msg
+eyeOff : IconBuilder msg
 eyeOff =
-    svgFeatherIcon "eye-off"
+    makeBuilder "eye-off"
         [ Svg.path [ d "M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" ] []
         , Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         ]
@@ -1312,9 +1312,9 @@ eyeOff =
 {-| eye
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
 -}
-eye : Html msg
+eye : IconBuilder msg
 eye =
-    svgFeatherIcon "eye"
+    makeBuilder "eye"
         [ Svg.path [ d "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" ] []
         , Svg.circle [ cx "12", cy "12", r "3" ] []
         ]
@@ -1323,9 +1323,9 @@ eye =
 {-| facebook
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
 -}
-facebook : Html msg
+facebook : IconBuilder msg
 facebook =
-    svgFeatherIcon "facebook"
+    makeBuilder "facebook"
         [ Svg.path [ d "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" ] []
         ]
 
@@ -1333,9 +1333,9 @@ facebook =
 {-| fast-forward
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon></svg>
 -}
-fastForward : Html msg
+fastForward : IconBuilder msg
 fastForward =
-    svgFeatherIcon "fast-forward"
+    makeBuilder "fast-forward"
         [ Svg.polygon [ points "13 19 22 12 13 5 13 19" ] []
         , Svg.polygon [ points "2 19 11 12 2 5 2 19" ] []
         ]
@@ -1344,9 +1344,9 @@ fastForward =
 {-| feather
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17" y1="15" x2="9" y2="15"></line></svg>
 -}
-feather : Html msg
+feather : IconBuilder msg
 feather =
-    svgFeatherIcon "feather"
+    makeBuilder "feather"
         [ Svg.path [ d "M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" ] []
         , Svg.line [ x1 "16", y1 "8", x2 "2", y2 "22" ] []
         , Svg.line [ x1 "17", y1 "15", x2 "9", y2 "15" ] []
@@ -1356,9 +1356,9 @@ feather =
 {-| file-minus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
 -}
-fileMinus : Html msg
+fileMinus : IconBuilder msg
 fileMinus =
-    svgFeatherIcon "file-minus"
+    makeBuilder "file-minus"
         [ Svg.path [ d "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" ] []
         , Svg.polyline [ points "14 2 14 8 20 8" ] []
         , Svg.line [ x1 "9", y1 "15", x2 "15", y2 "15" ] []
@@ -1368,9 +1368,9 @@ fileMinus =
 {-| file-plus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
 -}
-filePlus : Html msg
+filePlus : IconBuilder msg
 filePlus =
-    svgFeatherIcon "file-plus"
+    makeBuilder "file-plus"
         [ Svg.path [ d "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" ] []
         , Svg.polyline [ points "14 2 14 8 20 8" ] []
         , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "12" ] []
@@ -1381,9 +1381,9 @@ filePlus =
 {-| file-text
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
 -}
-fileText : Html msg
+fileText : IconBuilder msg
 fileText =
-    svgFeatherIcon "file-text"
+    makeBuilder "file-text"
         [ Svg.path [ d "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" ] []
         , Svg.polyline [ points "14 2 14 8 20 8" ] []
         , Svg.line [ x1 "16", y1 "13", x2 "8", y2 "13" ] []
@@ -1395,9 +1395,9 @@ fileText =
 {-| file
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
 -}
-file : Html msg
+file : IconBuilder msg
 file =
-    svgFeatherIcon "file"
+    makeBuilder "file"
         [ Svg.path [ d "M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" ] []
         , Svg.polyline [ points "13 2 13 9 20 9" ] []
         ]
@@ -1406,9 +1406,9 @@ file =
 {-| film
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
 -}
-film : Html msg
+film : IconBuilder msg
 film =
-    svgFeatherIcon "film"
+    makeBuilder "film"
         [ Svg.rect [ Svg.Attributes.x "2", y "2", width "20", height "20", rx "2.18", ry "2.18" ] []
         , Svg.line [ x1 "7", y1 "2", x2 "7", y2 "22" ] []
         , Svg.line [ x1 "17", y1 "2", x2 "17", y2 "22" ] []
@@ -1423,9 +1423,9 @@ film =
 {-| filter
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
 -}
-filter : Html msg
+filter : IconBuilder msg
 filter =
-    svgFeatherIcon "filter"
+    makeBuilder "filter"
         [ Svg.polygon [ points "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" ] []
         ]
 
@@ -1433,9 +1433,9 @@ filter =
 {-| flag
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
 -}
-flag : Html msg
+flag : IconBuilder msg
 flag =
-    svgFeatherIcon "flag"
+    makeBuilder "flag"
         [ Svg.path [ d "M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" ] []
         , Svg.line [ x1 "4", y1 "22", x2 "4", y2 "15" ] []
         ]
@@ -1444,9 +1444,9 @@ flag =
 {-| folder
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 -}
-folder : Html msg
+folder : IconBuilder msg
 folder =
-    svgFeatherIcon "folder"
+    makeBuilder "folder"
         [ Svg.path [ d "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" ] []
         ]
 
@@ -1454,9 +1454,9 @@ folder =
 {-| github
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 -}
-github : Html msg
+github : IconBuilder msg
 github =
-    svgFeatherIcon "github"
+    makeBuilder "github"
         [ Svg.path [ d "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" ] []
         ]
 
@@ -1464,9 +1464,9 @@ github =
 {-| gitlab
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path></svg>
 -}
-gitlab : Html msg
+gitlab : IconBuilder msg
 gitlab =
-    svgFeatherIcon "gitlab"
+    makeBuilder "gitlab"
         [ Svg.path [ d "M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" ] []
         ]
 
@@ -1474,9 +1474,9 @@ gitlab =
 {-| globe
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
 -}
-globe : Html msg
+globe : IconBuilder msg
 globe =
-    svgFeatherIcon "globe"
+    makeBuilder "globe"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "2", y1 "12", x2 "22", y2 "12" ] []
         , Svg.path [ d "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" ] []
@@ -1486,9 +1486,9 @@ globe =
 {-| grid
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
 -}
-grid : Html msg
+grid : IconBuilder msg
 grid =
-    svgFeatherIcon "grid"
+    makeBuilder "grid"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "7", height "7" ] []
         , Svg.rect [ Svg.Attributes.x "14", y "3", width "7", height "7" ] []
         , Svg.rect [ Svg.Attributes.x "14", y "14", width "7", height "7" ] []
@@ -1499,9 +1499,9 @@ grid =
 {-| hash
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
 -}
-hash : Html msg
+hash : IconBuilder msg
 hash =
-    svgFeatherIcon "hash"
+    makeBuilder "hash"
         [ Svg.line [ x1 "4", y1 "9", x2 "20", y2 "9" ] []
         , Svg.line [ x1 "4", y1 "15", x2 "20", y2 "15" ] []
         , Svg.line [ x1 "10", y1 "3", x2 "8", y2 "21" ] []
@@ -1512,9 +1512,9 @@ hash =
 {-| headphones
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
 -}
-headphones : Html msg
+headphones : IconBuilder msg
 headphones =
-    svgFeatherIcon "headphones"
+    makeBuilder "headphones"
         [ Svg.path [ d "M3 18v-6a9 9 0 0 1 18 0v6" ] []
         , Svg.path [ d "M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" ] []
         ]
@@ -1523,9 +1523,9 @@ headphones =
 {-| heart
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
 -}
-heart : Html msg
+heart : IconBuilder msg
 heart =
-    svgFeatherIcon "heart"
+    makeBuilder "heart"
         [ Svg.path [ d "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" ] []
         ]
 
@@ -1533,9 +1533,9 @@ heart =
 {-| help-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="17" x2="12" y2="17"></line></svg>
 -}
-helpCircle : Html msg
+helpCircle : IconBuilder msg
 helpCircle =
-    svgFeatherIcon "help-circle"
+    makeBuilder "help-circle"
         [ Svg.path [ d "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" ] []
         , Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "17", x2 "12", y2 "17" ] []
@@ -1545,9 +1545,9 @@ helpCircle =
 {-| home
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
 -}
-home : Html msg
+home : IconBuilder msg
 home =
-    svgFeatherIcon "home"
+    makeBuilder "home"
         [ Svg.path [ d "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" ] []
         , Svg.polyline [ points "9 22 9 12 15 12 15 22" ] []
         ]
@@ -1556,9 +1556,9 @@ home =
 {-| image
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
 -}
-image : Html msg
+image : IconBuilder msg
 image =
-    svgFeatherIcon "image"
+    makeBuilder "image"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.circle [ cx "8.5", cy "8.5", r "1.5" ] []
         , Svg.polyline [ points "21 15 16 10 5 21" ] []
@@ -1568,9 +1568,9 @@ image =
 {-| inbox
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 13 16 13 14 16 10 16 8 13 2 13"></polyline><path d="M5.47 5.19L2 13v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5l-3.47-7.81A2 2 0 0 0 16.7 4H7.3a2 2 0 0 0-1.83 1.19z"></path></svg>
 -}
-inbox : Html msg
+inbox : IconBuilder msg
 inbox =
-    svgFeatherIcon "inbox"
+    makeBuilder "inbox"
         [ Svg.polyline [ points "22 13 16 13 14 16 10 16 8 13 2 13" ] []
         , Svg.path [ d "M5.47 5.19L2 13v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5l-3.47-7.81A2 2 0 0 0 16.7 4H7.3a2 2 0 0 0-1.83 1.19z" ] []
         ]
@@ -1579,9 +1579,9 @@ inbox =
 {-| info
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
 -}
-info : Html msg
+info : IconBuilder msg
 info =
-    svgFeatherIcon "info"
+    makeBuilder "info"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "12" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "8" ] []
@@ -1591,9 +1591,9 @@ info =
 {-| instagram
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
 -}
-instagram : Html msg
+instagram : IconBuilder msg
 instagram =
-    svgFeatherIcon "instagram"
+    makeBuilder "instagram"
         [ Svg.rect [ Svg.Attributes.x "2", y "2", width "20", height "20", rx "5", ry "5" ] []
         , Svg.path [ d "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" ] []
         , Svg.line [ x1 "17.5", y1 "6.5", x2 "17.5", y2 "6.5" ] []
@@ -1603,9 +1603,9 @@ instagram =
 {-| italic
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line></svg>
 -}
-italic : Html msg
+italic : IconBuilder msg
 italic =
-    svgFeatherIcon "italic"
+    makeBuilder "italic"
         [ Svg.line [ x1 "19", y1 "4", x2 "10", y2 "4" ] []
         , Svg.line [ x1 "14", y1 "20", x2 "5", y2 "20" ] []
         , Svg.line [ x1 "15", y1 "4", x2 "9", y2 "20" ] []
@@ -1615,9 +1615,9 @@ italic =
 {-| layers
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
 -}
-layers : Html msg
+layers : IconBuilder msg
 layers =
-    svgFeatherIcon "layers"
+    makeBuilder "layers"
         [ Svg.polygon [ points "12 2 2 7 12 12 22 7 12 2" ] []
         , Svg.polyline [ points "2 17 12 22 22 17" ] []
         , Svg.polyline [ points "2 12 12 17 22 12" ] []
@@ -1627,9 +1627,9 @@ layers =
 {-| layout
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
 -}
-layout : Html msg
+layout : IconBuilder msg
 layout =
-    svgFeatherIcon "layout"
+    makeBuilder "layout"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "3", y1 "9", x2 "21", y2 "9" ] []
         , Svg.line [ x1 "9", y1 "21", x2 "9", y2 "9" ] []
@@ -1639,9 +1639,9 @@ layout =
 {-| life-buoy
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg>
 -}
-lifeBuoy : Html msg
+lifeBuoy : IconBuilder msg
 lifeBuoy =
-    svgFeatherIcon "life-buoy"
+    makeBuilder "life-buoy"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.circle [ cx "12", cy "12", r "4" ] []
         , Svg.line [ x1 "4.93", y1 "4.93", x2 "9.17", y2 "9.17" ] []
@@ -1655,9 +1655,9 @@ lifeBuoy =
 {-| link-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg>
 -}
-link2 : Html msg
+link2 : IconBuilder msg
 link2 =
-    svgFeatherIcon "link-2"
+    makeBuilder "link-2"
         [ Svg.path [ d "M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
         ]
@@ -1666,9 +1666,9 @@ link2 =
 {-| link
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
 -}
-link : Html msg
+link : IconBuilder msg
 link =
-    svgFeatherIcon "link"
+    makeBuilder "link"
         [ Svg.path [ d "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" ] []
         , Svg.path [ d "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" ] []
         ]
@@ -1677,9 +1677,9 @@ link =
 {-| list
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg>
 -}
-list : Html msg
+list : IconBuilder msg
 list =
-    svgFeatherIcon "list"
+    makeBuilder "list"
         [ Svg.line [ x1 "8", y1 "6", x2 "21", y2 "6" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "21", y2 "12" ] []
         , Svg.line [ x1 "8", y1 "18", x2 "21", y2 "18" ] []
@@ -1692,9 +1692,9 @@ list =
 {-| loader
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
 -}
-loader : Html msg
+loader : IconBuilder msg
 loader =
-    svgFeatherIcon "loader"
+    makeBuilder "loader"
         [ Svg.line [ x1 "12", y1 "2", x2 "12", y2 "6" ] []
         , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "22" ] []
         , Svg.line [ x1 "4.93", y1 "4.93", x2 "7.76", y2 "7.76" ] []
@@ -1709,9 +1709,9 @@ loader =
 {-| lock
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
 -}
-lock : Html msg
+lock : IconBuilder msg
 lock =
-    svgFeatherIcon "lock"
+    makeBuilder "lock"
         [ Svg.rect [ Svg.Attributes.x "3", y "11", width "18", height "11", rx "2", ry "2" ] []
         , Svg.path [ d "M7 11V7a5 5 0 0 1 10 0v4" ] []
         ]
@@ -1720,9 +1720,9 @@ lock =
 {-| log-in
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 22h5a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-5"></path><polyline points="11 16 15 12 11 8"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
 -}
-logIn : Html msg
+logIn : IconBuilder msg
 logIn =
-    svgFeatherIcon "log-in"
+    makeBuilder "log-in"
         [ Svg.path [ d "M14 22h5a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-5" ] []
         , Svg.polyline [ points "11 16 15 12 11 8" ] []
         , Svg.line [ x1 "15", y1 "12", x2 "3", y2 "12" ] []
@@ -1732,9 +1732,9 @@ logIn =
 {-| log-out
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5"></path><polyline points="17 16 21 12 17 8"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 -}
-logOut : Html msg
+logOut : IconBuilder msg
 logOut =
-    svgFeatherIcon "log-out"
+    makeBuilder "log-out"
         [ Svg.path [ d "M10 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5" ] []
         , Svg.polyline [ points "17 16 21 12 17 8" ] []
         , Svg.line [ x1 "21", y1 "12", x2 "9", y2 "12" ] []
@@ -1744,9 +1744,9 @@ logOut =
 {-| mail
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
 -}
-mail : Html msg
+mail : IconBuilder msg
 mail =
-    svgFeatherIcon "mail"
+    makeBuilder "mail"
         [ Svg.path [ d "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" ] []
         , Svg.polyline [ points "22,6 12,13 2,6" ] []
         ]
@@ -1755,9 +1755,9 @@ mail =
 {-| map-pin
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
 -}
-mapPin : Html msg
+mapPin : IconBuilder msg
 mapPin =
-    svgFeatherIcon "map-pin"
+    makeBuilder "map-pin"
         [ Svg.path [ d "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" ] []
         , Svg.circle [ cx "12", cy "10", r "3" ] []
         ]
@@ -1766,9 +1766,9 @@ mapPin =
 {-| map
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
 -}
-map : Html msg
+map : IconBuilder msg
 map =
-    svgFeatherIcon "map"
+    makeBuilder "map"
         [ Svg.polygon [ points "1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" ] []
         , Svg.line [ x1 "8", y1 "2", x2 "8", y2 "18" ] []
         , Svg.line [ x1 "16", y1 "6", x2 "16", y2 "22" ] []
@@ -1778,9 +1778,9 @@ map =
 {-| maximize-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
 -}
-maximize2 : Html msg
+maximize2 : IconBuilder msg
 maximize2 =
-    svgFeatherIcon "maximize-2"
+    makeBuilder "maximize-2"
         [ Svg.polyline [ points "15 3 21 3 21 9" ] []
         , Svg.polyline [ points "9 21 3 21 3 15" ] []
         , Svg.line [ x1 "21", y1 "3", x2 "14", y2 "10" ] []
@@ -1791,9 +1791,9 @@ maximize2 =
 {-| maximize
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
 -}
-maximize : Html msg
+maximize : IconBuilder msg
 maximize =
-    svgFeatherIcon "maximize"
+    makeBuilder "maximize"
         [ Svg.path [ d "M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" ] []
         ]
 
@@ -1801,9 +1801,9 @@ maximize =
 {-| menu
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
 -}
-menu : Html msg
+menu : IconBuilder msg
 menu =
-    svgFeatherIcon "menu"
+    makeBuilder "menu"
         [ Svg.line [ x1 "3", y1 "12", x2 "21", y2 "12" ] []
         , Svg.line [ x1 "3", y1 "6", x2 "21", y2 "6" ] []
         , Svg.line [ x1 "3", y1 "18", x2 "21", y2 "18" ] []
@@ -1813,9 +1813,9 @@ menu =
 {-| message-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
 -}
-messageCircle : Html msg
+messageCircle : IconBuilder msg
 messageCircle =
-    svgFeatherIcon "message-circle"
+    makeBuilder "message-circle"
         [ Svg.path [ d "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" ] []
         ]
 
@@ -1823,9 +1823,9 @@ messageCircle =
 {-| message-square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
 -}
-messageSquare : Html msg
+messageSquare : IconBuilder msg
 messageSquare =
-    svgFeatherIcon "message-square"
+    makeBuilder "message-square"
         [ Svg.path [ d "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" ] []
         ]
 
@@ -1833,9 +1833,9 @@ messageSquare =
 {-| mic-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
 -}
-micOff : Html msg
+micOff : IconBuilder msg
 micOff =
-    svgFeatherIcon "mic-off"
+    makeBuilder "mic-off"
         [ Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         , Svg.path [ d "M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6" ] []
         , Svg.path [ d "M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23" ] []
@@ -1847,9 +1847,9 @@ micOff =
 {-| mic
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
 -}
-mic : Html msg
+mic : IconBuilder msg
 mic =
-    svgFeatherIcon "mic"
+    makeBuilder "mic"
         [ Svg.path [ d "M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" ] []
         , Svg.path [ d "M19 10v2a7 7 0 0 1-14 0v-2" ] []
         , Svg.line [ x1 "12", y1 "19", x2 "12", y2 "23" ] []
@@ -1860,9 +1860,9 @@ mic =
 {-| minimize-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
 -}
-minimize2 : Html msg
+minimize2 : IconBuilder msg
 minimize2 =
-    svgFeatherIcon "minimize-2"
+    makeBuilder "minimize-2"
         [ Svg.polyline [ points "4 14 10 14 10 20" ] []
         , Svg.polyline [ points "20 10 14 10 14 4" ] []
         , Svg.line [ x1 "14", y1 "10", x2 "21", y2 "3" ] []
@@ -1873,9 +1873,9 @@ minimize2 =
 {-| minimize
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>
 -}
-minimize : Html msg
+minimize : IconBuilder msg
 minimize =
-    svgFeatherIcon "minimize"
+    makeBuilder "minimize"
         [ Svg.path [ d "M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" ] []
         ]
 
@@ -1883,9 +1883,9 @@ minimize =
 {-| minus-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
 -}
-minusCircle : Html msg
+minusCircle : IconBuilder msg
 minusCircle =
-    svgFeatherIcon "minus-circle"
+    makeBuilder "minus-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
         ]
@@ -1894,9 +1894,9 @@ minusCircle =
 {-| minus-square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line></svg>
 -}
-minusSquare : Html msg
+minusSquare : IconBuilder msg
 minusSquare =
-    svgFeatherIcon "minus-square"
+    makeBuilder "minus-square"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
         ]
@@ -1905,9 +1905,9 @@ minusSquare =
 {-| minus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
 -}
-minus : Html msg
+minus : IconBuilder msg
 minus =
-    svgFeatherIcon "minus"
+    makeBuilder "minus"
         [ Svg.line [ x1 "5", y1 "12", x2 "19", y2 "12" ] []
         ]
 
@@ -1915,9 +1915,9 @@ minus =
 {-| monitor
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
 -}
-monitor : Html msg
+monitor : IconBuilder msg
 monitor =
-    svgFeatherIcon "monitor"
+    makeBuilder "monitor"
         [ Svg.rect [ Svg.Attributes.x "2", y "3", width "20", height "14", rx "2", ry "2" ] []
         , Svg.line [ x1 "8", y1 "21", x2 "16", y2 "21" ] []
         , Svg.line [ x1 "12", y1 "17", x2 "12", y2 "21" ] []
@@ -1927,9 +1927,9 @@ monitor =
 {-| moon
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
 -}
-moon : Html msg
+moon : IconBuilder msg
 moon =
-    svgFeatherIcon "moon"
+    makeBuilder "moon"
         [ Svg.path [ d "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" ] []
         ]
 
@@ -1937,9 +1937,9 @@ moon =
 {-| more-horizontal
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="2"></circle><circle cx="20" cy="12" r="2"></circle><circle cx="4" cy="12" r="2"></circle></svg>
 -}
-moreHorizontal : Html msg
+moreHorizontal : IconBuilder msg
 moreHorizontal =
-    svgFeatherIcon "more-horizontal"
+    makeBuilder "more-horizontal"
         [ Svg.circle [ cx "12", cy "12", r "2" ] []
         , Svg.circle [ cx "20", cy "12", r "2" ] []
         , Svg.circle [ cx "4", cy "12", r "2" ] []
@@ -1949,9 +1949,9 @@ moreHorizontal =
 {-| more-vertical
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="4" r="2"></circle><circle cx="12" cy="20" r="2"></circle></svg>
 -}
-moreVertical : Html msg
+moreVertical : IconBuilder msg
 moreVertical =
-    svgFeatherIcon "more-vertical"
+    makeBuilder "more-vertical"
         [ Svg.circle [ cx "12", cy "12", r "2" ] []
         , Svg.circle [ cx "12", cy "4", r "2" ] []
         , Svg.circle [ cx "12", cy "20", r "2" ] []
@@ -1961,9 +1961,9 @@ moreVertical =
 {-| move
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line></svg>
 -}
-move : Html msg
+move : IconBuilder msg
 move =
-    svgFeatherIcon "move"
+    makeBuilder "move"
         [ Svg.polyline [ points "5 9 2 12 5 15" ] []
         , Svg.polyline [ points "9 5 12 2 15 5" ] []
         , Svg.polyline [ points "15 19 12 22 9 19" ] []
@@ -1976,9 +1976,9 @@ move =
 {-| music
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z"></path><polyline points="9 17 9 5 21 3 21 15"></polyline></svg>
 -}
-music : Html msg
+music : IconBuilder msg
 music =
-    svgFeatherIcon "music"
+    makeBuilder "music"
         [ Svg.path [ d "M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z" ] []
         , Svg.polyline [ points "9 17 9 5 21 3 21 15" ] []
         ]
@@ -1987,9 +1987,9 @@ music =
 {-| navigation-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="12 2 19 21 12 17 5 21 12 2"></polygon></svg>
 -}
-navigation2 : Html msg
+navigation2 : IconBuilder msg
 navigation2 =
-    svgFeatherIcon "navigation-2"
+    makeBuilder "navigation-2"
         [ Svg.polygon [ points "12 2 19 21 12 17 5 21 12 2" ] []
         ]
 
@@ -1997,9 +1997,9 @@ navigation2 =
 {-| navigation
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
 -}
-navigation : Html msg
+navigation : IconBuilder msg
 navigation =
-    svgFeatherIcon "navigation"
+    makeBuilder "navigation"
         [ Svg.polygon [ points "3 11 22 2 13 21 11 13 3 11" ] []
         ]
 
@@ -2007,9 +2007,9 @@ navigation =
 {-| octagon
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon></svg>
 -}
-octagon : Html msg
+octagon : IconBuilder msg
 octagon =
-    svgFeatherIcon "octagon"
+    makeBuilder "octagon"
         [ Svg.polygon [ points "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" ] []
         ]
 
@@ -2017,9 +2017,9 @@ octagon =
 {-| package
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line><line x1="7" y1="3.5" x2="17" y2="8.5"></line></svg>
 -}
-package : Html msg
+package : IconBuilder msg
 package =
-    svgFeatherIcon "package"
+    makeBuilder "package"
         [ Svg.path [ d "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" ] []
         , Svg.polyline [ points "2.32 6.16 12 11 21.68 6.16" ] []
         , Svg.line [ x1 "12", y1 "22.76", x2 "12", y2 "11" ] []
@@ -2030,9 +2030,9 @@ package =
 {-| paperclip
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
 -}
-paperclip : Html msg
+paperclip : IconBuilder msg
 paperclip =
-    svgFeatherIcon "paperclip"
+    makeBuilder "paperclip"
         [ Svg.path [ d "M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" ] []
         ]
 
@@ -2040,9 +2040,9 @@ paperclip =
 {-| pause-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>
 -}
-pauseCircle : Html msg
+pauseCircle : IconBuilder msg
 pauseCircle =
-    svgFeatherIcon "pause-circle"
+    makeBuilder "pause-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "10", y1 "15", x2 "10", y2 "9" ] []
         , Svg.line [ x1 "14", y1 "15", x2 "14", y2 "9" ] []
@@ -2052,9 +2052,9 @@ pauseCircle =
 {-| pause
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
 -}
-pause : Html msg
+pause : IconBuilder msg
 pause =
-    svgFeatherIcon "pause"
+    makeBuilder "pause"
         [ Svg.rect [ Svg.Attributes.x "6", y "4", width "4", height "16" ] []
         , Svg.rect [ Svg.Attributes.x "14", y "4", width "4", height "16" ] []
         ]
@@ -2063,9 +2063,9 @@ pause =
 {-| percent
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
 -}
-percent : Html msg
+percent : IconBuilder msg
 percent =
-    svgFeatherIcon "percent"
+    makeBuilder "percent"
         [ Svg.line [ x1 "19", y1 "5", x2 "5", y2 "19" ] []
         , Svg.circle [ cx "6.5", cy "6.5", r "2.5" ] []
         , Svg.circle [ cx "17.5", cy "17.5", r "2.5" ] []
@@ -2075,9 +2075,9 @@ percent =
 {-| phone-call
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phoneCall : Html msg
+phoneCall : IconBuilder msg
 phoneCall =
-    svgFeatherIcon "phone-call"
+    makeBuilder "phone-call"
         [ Svg.path [ d "M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
         ]
 
@@ -2085,9 +2085,9 @@ phoneCall =
 {-| phone-forwarded
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phoneForwarded : Html msg
+phoneForwarded : IconBuilder msg
 phoneForwarded =
-    svgFeatherIcon "phone-forwarded"
+    makeBuilder "phone-forwarded"
         [ Svg.polyline [ points "19 1 23 5 19 9" ] []
         , Svg.line [ x1 "15", y1 "5", x2 "23", y2 "5" ] []
         , Svg.path [ d "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
@@ -2097,9 +2097,9 @@ phoneForwarded =
 {-| phone-incoming
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phoneIncoming : Html msg
+phoneIncoming : IconBuilder msg
 phoneIncoming =
-    svgFeatherIcon "phone-incoming"
+    makeBuilder "phone-incoming"
         [ Svg.polyline [ points "16 2 16 8 22 8" ] []
         , Svg.line [ x1 "23", y1 "1", x2 "16", y2 "8" ] []
         , Svg.path [ d "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
@@ -2109,9 +2109,9 @@ phoneIncoming =
 {-| phone-missed
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phoneMissed : Html msg
+phoneMissed : IconBuilder msg
 phoneMissed =
-    svgFeatherIcon "phone-missed"
+    makeBuilder "phone-missed"
         [ Svg.line [ x1 "23", y1 "1", x2 "17", y2 "7" ] []
         , Svg.line [ x1 "17", y1 "1", x2 "23", y2 "7" ] []
         , Svg.path [ d "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
@@ -2121,9 +2121,9 @@ phoneMissed =
 {-| phone-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line></svg>
 -}
-phoneOff : Html msg
+phoneOff : IconBuilder msg
 phoneOff =
-    svgFeatherIcon "phone-off"
+    makeBuilder "phone-off"
         [ Svg.path [ d "M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91" ] []
         , Svg.line [ x1 "23", y1 "1", x2 "1", y2 "23" ] []
         ]
@@ -2132,9 +2132,9 @@ phoneOff =
 {-| phone-outgoing
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phoneOutgoing : Html msg
+phoneOutgoing : IconBuilder msg
 phoneOutgoing =
-    svgFeatherIcon "phone-outgoing"
+    makeBuilder "phone-outgoing"
         [ Svg.polyline [ points "23 7 23 1 17 1" ] []
         , Svg.line [ x1 "16", y1 "8", x2 "23", y2 "1" ] []
         , Svg.path [ d "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
@@ -2144,9 +2144,9 @@ phoneOutgoing =
 {-| phone
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 -}
-phone : Html msg
+phone : IconBuilder msg
 phone =
-    svgFeatherIcon "phone"
+    makeBuilder "phone"
         [ Svg.path [ d "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" ] []
         ]
 
@@ -2154,9 +2154,9 @@ phone =
 {-| pie-chart
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
 -}
-pieChart : Html msg
+pieChart : IconBuilder msg
 pieChart =
-    svgFeatherIcon "pie-chart"
+    makeBuilder "pie-chart"
         [ Svg.path [ d "M21.21 15.89A10 10 0 1 1 8 2.83" ] []
         , Svg.path [ d "M22 12A10 10 0 0 0 12 2v10z" ] []
         ]
@@ -2165,9 +2165,9 @@ pieChart =
 {-| play-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
 -}
-playCircle : Html msg
+playCircle : IconBuilder msg
 playCircle =
-    svgFeatherIcon "play-circle"
+    makeBuilder "play-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.polygon [ points "10 8 16 12 10 16 10 8" ] []
         ]
@@ -2176,9 +2176,9 @@ playCircle =
 {-| play
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
 -}
-play : Html msg
+play : IconBuilder msg
 play =
-    svgFeatherIcon "play"
+    makeBuilder "play"
         [ Svg.polygon [ points "5 3 19 12 5 21 5 3" ] []
         ]
 
@@ -2186,9 +2186,9 @@ play =
 {-| plus-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
 -}
-plusCircle : Html msg
+plusCircle : IconBuilder msg
 plusCircle =
-    svgFeatherIcon "plus-circle"
+    makeBuilder "plus-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "16" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
@@ -2198,9 +2198,9 @@ plusCircle =
 {-| plus-square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
 -}
-plusSquare : Html msg
+plusSquare : IconBuilder msg
 plusSquare =
-    svgFeatherIcon "plus-square"
+    makeBuilder "plus-square"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "16" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
@@ -2210,9 +2210,9 @@ plusSquare =
 {-| plus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
 -}
-plus : Html msg
+plus : IconBuilder msg
 plus =
-    svgFeatherIcon "plus"
+    makeBuilder "plus"
         [ Svg.line [ x1 "12", y1 "5", x2 "12", y2 "19" ] []
         , Svg.line [ x1 "5", y1 "12", x2 "19", y2 "12" ] []
         ]
@@ -2221,9 +2221,9 @@ plus =
 {-| pocket
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline></svg>
 -}
-pocket : Html msg
+pocket : IconBuilder msg
 pocket =
-    svgFeatherIcon "pocket"
+    makeBuilder "pocket"
         [ Svg.path [ d "M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z" ] []
         , Svg.polyline [ points "8 10 12 14 16 10" ] []
         ]
@@ -2232,9 +2232,9 @@ pocket =
 {-| power
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
 -}
-power : Html msg
+power : IconBuilder msg
 power =
-    svgFeatherIcon "power"
+    makeBuilder "power"
         [ Svg.path [ d "M18.36 6.64a9 9 0 1 1-12.73 0" ] []
         , Svg.line [ x1 "12", y1 "2", x2 "12", y2 "12" ] []
         ]
@@ -2243,9 +2243,9 @@ power =
 {-| printer
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
 -}
-printer : Html msg
+printer : IconBuilder msg
 printer =
-    svgFeatherIcon "printer"
+    makeBuilder "printer"
         [ Svg.polyline [ points "6 9 6 2 18 2 18 9" ] []
         , Svg.path [ d "M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" ] []
         , Svg.rect [ Svg.Attributes.x "6", y "14", width "12", height "8" ] []
@@ -2255,9 +2255,9 @@ printer =
 {-| radio
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
 -}
-radio : Html msg
+radio : IconBuilder msg
 radio =
-    svgFeatherIcon "radio"
+    makeBuilder "radio"
         [ Svg.circle [ cx "12", cy "12", r "2" ] []
         , Svg.path [ d "M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14" ] []
         ]
@@ -2266,9 +2266,9 @@ radio =
 {-| refresh-ccw
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
 -}
-refreshCcw : Html msg
+refreshCcw : IconBuilder msg
 refreshCcw =
-    svgFeatherIcon "refresh-ccw"
+    makeBuilder "refresh-ccw"
         [ Svg.polyline [ points "1 4 1 10 7 10" ] []
         , Svg.polyline [ points "23 20 23 14 17 14" ] []
         , Svg.path [ d "M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" ] []
@@ -2278,9 +2278,9 @@ refreshCcw =
 {-| refresh-cw
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
 -}
-refreshCw : Html msg
+refreshCw : IconBuilder msg
 refreshCw =
-    svgFeatherIcon "refresh-cw"
+    makeBuilder "refresh-cw"
         [ Svg.polyline [ points "23 4 23 10 17 10" ] []
         , Svg.polyline [ points "1 20 1 14 7 14" ] []
         , Svg.path [ d "M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" ] []
@@ -2290,9 +2290,9 @@ refreshCw =
 {-| repeat
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
 -}
-repeat : Html msg
+repeat : IconBuilder msg
 repeat =
-    svgFeatherIcon "repeat"
+    makeBuilder "repeat"
         [ Svg.polyline [ points "17 1 21 5 17 9" ] []
         , Svg.path [ d "M3 11V9a4 4 0 0 1 4-4h14" ] []
         , Svg.polyline [ points "7 23 3 19 7 15" ] []
@@ -2303,9 +2303,9 @@ repeat =
 {-| rewind
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon></svg>
 -}
-rewind : Html msg
+rewind : IconBuilder msg
 rewind =
-    svgFeatherIcon "rewind"
+    makeBuilder "rewind"
         [ Svg.polygon [ points "11 19 2 12 11 5 11 19" ] []
         , Svg.polygon [ points "22 19 13 12 22 5 22 19" ] []
         ]
@@ -2314,9 +2314,9 @@ rewind =
 {-| rotate-ccw
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
 -}
-rotateCcw : Html msg
+rotateCcw : IconBuilder msg
 rotateCcw =
-    svgFeatherIcon "rotate-ccw"
+    makeBuilder "rotate-ccw"
         [ Svg.polyline [ points "1 4 1 10 7 10" ] []
         , Svg.path [ d "M3.51 15a9 9 0 1 0 2.13-9.36L1 10" ] []
         ]
@@ -2325,9 +2325,9 @@ rotateCcw =
 {-| rotate-cw
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
 -}
-rotateCw : Html msg
+rotateCw : IconBuilder msg
 rotateCw =
-    svgFeatherIcon "rotate-cw"
+    makeBuilder "rotate-cw"
         [ Svg.polyline [ points "23 4 23 10 17 10" ] []
         , Svg.path [ d "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" ] []
         ]
@@ -2336,9 +2336,9 @@ rotateCw =
 {-| save
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
 -}
-save : Html msg
+save : IconBuilder msg
 save =
-    svgFeatherIcon "save"
+    makeBuilder "save"
         [ Svg.path [ d "M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" ] []
         , Svg.polyline [ points "17 21 17 13 7 13 7 21" ] []
         , Svg.polyline [ points "7 3 7 8 15 8" ] []
@@ -2348,9 +2348,9 @@ save =
 {-| scissors
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
 -}
-scissors : Html msg
+scissors : IconBuilder msg
 scissors =
-    svgFeatherIcon "scissors"
+    makeBuilder "scissors"
         [ Svg.circle [ cx "6", cy "6", r "3" ] []
         , Svg.circle [ cx "6", cy "18", r "3" ] []
         , Svg.line [ x1 "20", y1 "4", x2 "8.12", y2 "15.88" ] []
@@ -2362,9 +2362,9 @@ scissors =
 {-| search
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
 -}
-search : Html msg
+search : IconBuilder msg
 search =
-    svgFeatherIcon "search"
+    makeBuilder "search"
         [ Svg.circle [ cx "10.5", cy "10.5", r "7.5" ] []
         , Svg.line [ x1 "21", y1 "21", x2 "15.8", y2 "15.8" ] []
         ]
@@ -2373,9 +2373,9 @@ search =
 {-| server
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
 -}
-server : Html msg
+server : IconBuilder msg
 server =
-    svgFeatherIcon "server"
+    makeBuilder "server"
         [ Svg.rect [ Svg.Attributes.x "2", y "2", width "20", height "8", rx "2", ry "2" ] []
         , Svg.rect [ Svg.Attributes.x "2", y "14", width "20", height "8", rx "2", ry "2" ] []
         , Svg.line [ x1 "6", y1 "6", x2 "6", y2 "6" ] []
@@ -2386,9 +2386,9 @@ server =
 {-| settings
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
 -}
-settings : Html msg
+settings : IconBuilder msg
 settings =
-    svgFeatherIcon "settings"
+    makeBuilder "settings"
         [ Svg.circle [ cx "12", cy "12", r "3" ] []
         , Svg.path [ d "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" ] []
         ]
@@ -2397,9 +2397,9 @@ settings =
 {-| share-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
 -}
-share2 : Html msg
+share2 : IconBuilder msg
 share2 =
-    svgFeatherIcon "share-2"
+    makeBuilder "share-2"
         [ Svg.circle [ cx "18", cy "5", r "3" ] []
         , Svg.circle [ cx "6", cy "12", r "3" ] []
         , Svg.circle [ cx "18", cy "19", r "3" ] []
@@ -2411,9 +2411,9 @@ share2 =
 {-| share
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
 -}
-share : Html msg
+share : IconBuilder msg
 share =
-    svgFeatherIcon "share"
+    makeBuilder "share"
         [ Svg.path [ d "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" ] []
         , Svg.polyline [ points "16 6 12 2 8 6" ] []
         , Svg.line [ x1 "12", y1 "2", x2 "12", y2 "15" ] []
@@ -2423,9 +2423,9 @@ share =
 {-| shield
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M12 22s8-4 8-10V4l-8-2-8 2v8c0 6 8 10 8 10z"></path></svg>
 -}
-shield : Html msg
+shield : IconBuilder msg
 shield =
-    svgFeatherIcon "shield"
+    makeBuilder "shield"
         [ Svg.path [ d "M12 22s8-4 8-10V4l-8-2-8 2v8c0 6 8 10 8 10z" ] []
         ]
 
@@ -2433,9 +2433,9 @@ shield =
 {-| shopping-cart
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="8" cy="21" r="2"></circle><circle cx="20" cy="21" r="2"></circle><path d="M5.67 6H23l-1.68 8.39a2 2 0 0 1-2 1.61H8.75a2 2 0 0 1-2-1.74L5.23 2.74A2 2 0 0 0 3.25 1H1"></path></svg>
 -}
-shoppingCart : Html msg
+shoppingCart : IconBuilder msg
 shoppingCart =
-    svgFeatherIcon "shopping-cart"
+    makeBuilder "shopping-cart"
         [ Svg.circle [ cx "8", cy "21", r "2" ] []
         , Svg.circle [ cx "20", cy "21", r "2" ] []
         , Svg.path [ d "M5.67 6H23l-1.68 8.39a2 2 0 0 1-2 1.61H8.75a2 2 0 0 1-2-1.74L5.23 2.74A2 2 0 0 0 3.25 1H1" ] []
@@ -2445,9 +2445,9 @@ shoppingCart =
 {-| shuffle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
 -}
-shuffle : Html msg
+shuffle : IconBuilder msg
 shuffle =
-    svgFeatherIcon "shuffle"
+    makeBuilder "shuffle"
         [ Svg.polyline [ points "16 3 21 3 21 8" ] []
         , Svg.line [ x1 "4", y1 "20", x2 "21", y2 "3" ] []
         , Svg.polyline [ points "21 16 21 21 16 21" ] []
@@ -2459,9 +2459,9 @@ shuffle =
 {-| sidebar
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
 -}
-sidebar : Html msg
+sidebar : IconBuilder msg
 sidebar =
-    svgFeatherIcon "sidebar"
+    makeBuilder "sidebar"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "9", y1 "3", x2 "9", y2 "21" ] []
         ]
@@ -2470,9 +2470,9 @@ sidebar =
 {-| skip-back
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
 -}
-skipBack : Html msg
+skipBack : IconBuilder msg
 skipBack =
-    svgFeatherIcon "skip-back"
+    makeBuilder "skip-back"
         [ Svg.polygon [ points "19 20 9 12 19 4 19 20" ] []
         , Svg.line [ x1 "5", y1 "19", x2 "5", y2 "5" ] []
         ]
@@ -2481,9 +2481,9 @@ skipBack =
 {-| skip-forward
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
 -}
-skipForward : Html msg
+skipForward : IconBuilder msg
 skipForward =
-    svgFeatherIcon "skip-forward"
+    makeBuilder "skip-forward"
         [ Svg.polygon [ points "5 4 15 12 5 20 5 4" ] []
         , Svg.line [ x1 "19", y1 "5", x2 "19", y2 "19" ] []
         ]
@@ -2492,9 +2492,9 @@ skipForward =
 {-| slack
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z"></path><line x1="12.57" y1="5.99" x2="16.15" y2="16.39"></line><line x1="7.85" y1="7.61" x2="11.43" y2="18.01"></line><line x1="16.39" y1="7.85" x2="5.99" y2="11.43"></line><line x1="18.01" y1="12.57" x2="7.61" y2="16.15"></line></svg>
 -}
-slack : Html msg
+slack : IconBuilder msg
 slack =
-    svgFeatherIcon "slack"
+    makeBuilder "slack"
         [ Svg.path [ d "M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z" ] []
         , Svg.line [ x1 "12.57", y1 "5.99", x2 "16.15", y2 "16.39" ] []
         , Svg.line [ x1 "7.85", y1 "7.61", x2 "11.43", y2 "18.01" ] []
@@ -2506,9 +2506,9 @@ slack =
 {-| slash
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
 -}
-slash : Html msg
+slash : IconBuilder msg
 slash =
-    svgFeatherIcon "slash"
+    makeBuilder "slash"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "4.93", y1 "4.93", x2 "19.07", y2 "19.07" ] []
         ]
@@ -2517,9 +2517,9 @@ slash =
 {-| sliders
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
 -}
-sliders : Html msg
+sliders : IconBuilder msg
 sliders =
-    svgFeatherIcon "sliders"
+    makeBuilder "sliders"
         [ Svg.line [ x1 "4", y1 "21", x2 "4", y2 "14" ] []
         , Svg.line [ x1 "4", y1 "10", x2 "4", y2 "3" ] []
         , Svg.line [ x1 "12", y1 "21", x2 "12", y2 "12" ] []
@@ -2535,9 +2535,9 @@ sliders =
 {-| smartphone
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
 -}
-smartphone : Html msg
+smartphone : IconBuilder msg
 smartphone =
-    svgFeatherIcon "smartphone"
+    makeBuilder "smartphone"
         [ Svg.rect [ Svg.Attributes.x "5", y "2", width "14", height "20", rx "2", ry "2" ] []
         , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "18" ] []
         ]
@@ -2546,9 +2546,9 @@ smartphone =
 {-| speaker
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12" y2="6"></line></svg>
 -}
-speaker : Html msg
+speaker : IconBuilder msg
 speaker =
-    svgFeatherIcon "speaker"
+    makeBuilder "speaker"
         [ Svg.rect [ Svg.Attributes.x "4", y "2", width "16", height "20", rx "2", ry "2" ] []
         , Svg.circle [ cx "12", cy "14", r "4" ] []
         , Svg.line [ x1 "12", y1 "6", x2 "12", y2 "6" ] []
@@ -2558,9 +2558,9 @@ speaker =
 {-| square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
 -}
-square : Html msg
+square : IconBuilder msg
 square =
-    svgFeatherIcon "square"
+    makeBuilder "square"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         ]
 
@@ -2568,9 +2568,9 @@ square =
 {-| star
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
 -}
-star : Html msg
+star : IconBuilder msg
 star =
-    svgFeatherIcon "star"
+    makeBuilder "star"
         [ Svg.polygon [ points "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" ] []
         ]
 
@@ -2578,9 +2578,9 @@ star =
 {-| stop-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect></svg>
 -}
-stopCircle : Html msg
+stopCircle : IconBuilder msg
 stopCircle =
-    svgFeatherIcon "stop-circle"
+    makeBuilder "stop-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.rect [ Svg.Attributes.x "9", y "9", width "6", height "6" ] []
         ]
@@ -2589,9 +2589,9 @@ stopCircle =
 {-| sun
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
 -}
-sun : Html msg
+sun : IconBuilder msg
 sun =
-    svgFeatherIcon "sun"
+    makeBuilder "sun"
         [ Svg.circle [ cx "12", cy "12", r "5" ] []
         , Svg.line [ x1 "12", y1 "1", x2 "12", y2 "3" ] []
         , Svg.line [ x1 "12", y1 "21", x2 "12", y2 "23" ] []
@@ -2607,9 +2607,9 @@ sun =
 {-| sunrise
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline></svg>
 -}
-sunrise : Html msg
+sunrise : IconBuilder msg
 sunrise =
-    svgFeatherIcon "sunrise"
+    makeBuilder "sunrise"
         [ Svg.path [ d "M17 18a5 5 0 0 0-10 0" ] []
         , Svg.line [ x1 "12", y1 "2", x2 "12", y2 "9" ] []
         , Svg.line [ x1 "4.22", y1 "10.22", x2 "5.64", y2 "11.64" ] []
@@ -2624,9 +2624,9 @@ sunrise =
 {-| sunset
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline></svg>
 -}
-sunset : Html msg
+sunset : IconBuilder msg
 sunset =
-    svgFeatherIcon "sunset"
+    makeBuilder "sunset"
         [ Svg.path [ d "M17 18a5 5 0 0 0-10 0" ] []
         , Svg.line [ x1 "12", y1 "9", x2 "12", y2 "2" ] []
         , Svg.line [ x1 "4.22", y1 "10.22", x2 "5.64", y2 "11.64" ] []
@@ -2641,9 +2641,9 @@ sunset =
 {-| tablet
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="4" y="2" width="16" height="20" rx="2" ry="2" transform="rotate(180 12 12)"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
 -}
-tablet : Html msg
+tablet : IconBuilder msg
 tablet =
-    svgFeatherIcon "tablet"
+    makeBuilder "tablet"
         [ Svg.rect [ Svg.Attributes.x "4", y "2", width "16", height "20", rx "2", ry "2", transform "rotate(180 12 12)" ] []
         , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "18" ] []
         ]
@@ -2652,9 +2652,9 @@ tablet =
 {-| tag
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 -}
-tag : Html msg
+tag : IconBuilder msg
 tag =
-    svgFeatherIcon "tag"
+    makeBuilder "tag"
         [ Svg.path [ d "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" ] []
         , Svg.line [ x1 "7", y1 "7", x2 "7", y2 "7" ] []
         ]
@@ -2663,9 +2663,9 @@ tag =
 {-| target
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
 -}
-target : Html msg
+target : IconBuilder msg
 target =
-    svgFeatherIcon "target"
+    makeBuilder "target"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.circle [ cx "12", cy "12", r "6" ] []
         , Svg.circle [ cx "12", cy "12", r "2" ] []
@@ -2675,9 +2675,9 @@ target =
 {-| thermometer
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
 -}
-thermometer : Html msg
+thermometer : IconBuilder msg
 thermometer =
-    svgFeatherIcon "thermometer"
+    makeBuilder "thermometer"
         [ Svg.path [ d "M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" ] []
         ]
 
@@ -2685,9 +2685,9 @@ thermometer =
 {-| thumbs-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
 -}
-thumbsDown : Html msg
+thumbsDown : IconBuilder msg
 thumbsDown =
-    svgFeatherIcon "thumbs-down"
+    makeBuilder "thumbs-down"
         [ Svg.path [ d "M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" ] []
         ]
 
@@ -2695,9 +2695,9 @@ thumbsDown =
 {-| thumbs-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
 -}
-thumbsUp : Html msg
+thumbsUp : IconBuilder msg
 thumbsUp =
-    svgFeatherIcon "thumbs-up"
+    makeBuilder "thumbs-up"
         [ Svg.path [ d "M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" ] []
         ]
 
@@ -2705,9 +2705,9 @@ thumbsUp =
 {-| toggle-left
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle></svg>
 -}
-toggleLeft : Html msg
+toggleLeft : IconBuilder msg
 toggleLeft =
-    svgFeatherIcon "toggle-left"
+    makeBuilder "toggle-left"
         [ Svg.rect [ Svg.Attributes.x "1", y "5", width "22", height "14", rx "7", ry "7" ] []
         , Svg.circle [ cx "8", cy "12", r "3" ] []
         ]
@@ -2716,9 +2716,9 @@ toggleLeft =
 {-| toggle-right
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle></svg>
 -}
-toggleRight : Html msg
+toggleRight : IconBuilder msg
 toggleRight =
-    svgFeatherIcon "toggle-right"
+    makeBuilder "toggle-right"
         [ Svg.rect [ Svg.Attributes.x "1", y "5", width "22", height "14", rx "7", ry "7" ] []
         , Svg.circle [ cx "16", cy "12", r "3" ] []
         ]
@@ -2727,9 +2727,9 @@ toggleRight =
 {-| trash-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
 -}
-trash2 : Html msg
+trash2 : IconBuilder msg
 trash2 =
-    svgFeatherIcon "trash-2"
+    makeBuilder "trash-2"
         [ Svg.polyline [ points "3 6 5 6 21 6" ] []
         , Svg.path [ d "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" ] []
         , Svg.line [ x1 "10", y1 "11", x2 "10", y2 "17" ] []
@@ -2740,9 +2740,9 @@ trash2 =
 {-| trash
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
 -}
-trash : Html msg
+trash : IconBuilder msg
 trash =
-    svgFeatherIcon "trash"
+    makeBuilder "trash"
         [ Svg.polyline [ points "3 6 5 6 21 6" ] []
         , Svg.path [ d "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" ] []
         ]
@@ -2751,9 +2751,9 @@ trash =
 {-| trending-down
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
 -}
-trendingDown : Html msg
+trendingDown : IconBuilder msg
 trendingDown =
-    svgFeatherIcon "trending-down"
+    makeBuilder "trending-down"
         [ Svg.polyline [ points "23 18 13.5 8.5 8.5 13.5 1 6" ] []
         , Svg.polyline [ points "17 18 23 18 23 12" ] []
         ]
@@ -2762,9 +2762,9 @@ trendingDown =
 {-| trending-up
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
 -}
-trendingUp : Html msg
+trendingUp : IconBuilder msg
 trendingUp =
-    svgFeatherIcon "trending-up"
+    makeBuilder "trending-up"
         [ Svg.polyline [ points "23 6 13.5 15.5 8.5 10.5 1 18" ] []
         , Svg.polyline [ points "17 6 23 6 23 12" ] []
         ]
@@ -2773,9 +2773,9 @@ trendingUp =
 {-| triangle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
 -}
-triangle : Html msg
+triangle : IconBuilder msg
 triangle =
-    svgFeatherIcon "triangle"
+    makeBuilder "triangle"
         [ Svg.path [ d "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" ] []
         ]
 
@@ -2783,9 +2783,9 @@ triangle =
 {-| tv
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
 -}
-tv : Html msg
+tv : IconBuilder msg
 tv =
-    svgFeatherIcon "tv"
+    makeBuilder "tv"
         [ Svg.rect [ Svg.Attributes.x "2", y "7", width "20", height "15", rx "2", ry "2" ] []
         , Svg.polyline [ points "17 2 12 7 7 2" ] []
         ]
@@ -2794,9 +2794,9 @@ tv =
 {-| twitter
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
 -}
-twitter : Html msg
+twitter : IconBuilder msg
 twitter =
-    svgFeatherIcon "twitter"
+    makeBuilder "twitter"
         [ Svg.path [ d "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" ] []
         ]
 
@@ -2804,9 +2804,9 @@ twitter =
 {-| type
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
 -}
-type_ : Html msg
+type_ : IconBuilder msg
 type_ =
-    svgFeatherIcon "type"
+    makeBuilder "type"
         [ Svg.polyline [ points "4 7 4 4 20 4 20 7" ] []
         , Svg.line [ x1 "9", y1 "20", x2 "15", y2 "20" ] []
         , Svg.line [ x1 "12", y1 "4", x2 "12", y2 "20" ] []
@@ -2816,9 +2816,9 @@ type_ =
 {-| umbrella
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path></svg>
 -}
-umbrella : Html msg
+umbrella : IconBuilder msg
 umbrella =
-    svgFeatherIcon "umbrella"
+    makeBuilder "umbrella"
         [ Svg.path [ d "M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7" ] []
         ]
 
@@ -2826,9 +2826,9 @@ umbrella =
 {-| underline
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line></svg>
 -}
-underline : Html msg
+underline : IconBuilder msg
 underline =
-    svgFeatherIcon "underline"
+    makeBuilder "underline"
         [ Svg.path [ d "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3" ] []
         , Svg.line [ x1 "4", y1 "21", x2 "20", y2 "21" ] []
         ]
@@ -2837,9 +2837,9 @@ underline =
 {-| unlock
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>
 -}
-unlock : Html msg
+unlock : IconBuilder msg
 unlock =
-    svgFeatherIcon "unlock"
+    makeBuilder "unlock"
         [ Svg.rect [ Svg.Attributes.x "3", y "11", width "18", height "11", rx "2", ry "2" ] []
         , Svg.path [ d "M7 11V7a5 5 0 0 1 9.9-1" ] []
         ]
@@ -2848,9 +2848,9 @@ unlock =
 {-| upload-cloud
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
 -}
-uploadCloud : Html msg
+uploadCloud : IconBuilder msg
 uploadCloud =
-    svgFeatherIcon "upload-cloud"
+    makeBuilder "upload-cloud"
         [ Svg.polyline [ points "16 16 12 12 8 16" ] []
         , Svg.line [ x1 "12", y1 "12", x2 "12", y2 "21" ] []
         , Svg.path [ d "M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3" ] []
@@ -2861,9 +2861,9 @@ uploadCloud =
 {-| upload
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="16"></line></svg>
 -}
-upload : Html msg
+upload : IconBuilder msg
 upload =
-    svgFeatherIcon "upload"
+    makeBuilder "upload"
         [ Svg.path [ d "M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3" ] []
         , Svg.polyline [ points "16 6 12 2 8 6" ] []
         , Svg.line [ x1 "12", y1 "2", x2 "12", y2 "16" ] []
@@ -2873,9 +2873,9 @@ upload =
 {-| user-check
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
 -}
-userCheck : Html msg
+userCheck : IconBuilder msg
 userCheck =
-    svgFeatherIcon "user-check"
+    makeBuilder "user-check"
         [ Svg.path [ d "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "8.5", cy "7", r "4" ] []
         , Svg.polyline [ points "17 11 19 13 23 9" ] []
@@ -2885,9 +2885,9 @@ userCheck =
 {-| user-minus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line></svg>
 -}
-userMinus : Html msg
+userMinus : IconBuilder msg
 userMinus =
-    svgFeatherIcon "user-minus"
+    makeBuilder "user-minus"
         [ Svg.path [ d "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "8.5", cy "7", r "4" ] []
         , Svg.line [ x1 "23", y1 "11", x2 "17", y2 "11" ] []
@@ -2897,9 +2897,9 @@ userMinus =
 {-| user-plus
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
 -}
-userPlus : Html msg
+userPlus : IconBuilder msg
 userPlus =
-    svgFeatherIcon "user-plus"
+    makeBuilder "user-plus"
         [ Svg.path [ d "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "8.5", cy "7", r "4" ] []
         , Svg.line [ x1 "20", y1 "8", x2 "20", y2 "14" ] []
@@ -2910,9 +2910,9 @@ userPlus =
 {-| user-x
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line></svg>
 -}
-userX : Html msg
+userX : IconBuilder msg
 userX =
-    svgFeatherIcon "user-x"
+    makeBuilder "user-x"
         [ Svg.path [ d "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "8.5", cy "7", r "4" ] []
         , Svg.line [ x1 "18", y1 "8", x2 "23", y2 "13" ] []
@@ -2923,9 +2923,9 @@ userX =
 {-| user
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
 -}
-user : Html msg
+user : IconBuilder msg
 user =
-    svgFeatherIcon "user"
+    makeBuilder "user"
         [ Svg.path [ d "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "12", cy "7", r "4" ] []
         ]
@@ -2934,9 +2934,9 @@ user =
 {-| users
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
 -}
-users : Html msg
+users : IconBuilder msg
 users =
-    svgFeatherIcon "users"
+    makeBuilder "users"
         [ Svg.path [ d "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" ] []
         , Svg.circle [ cx "9", cy "7", r "4" ] []
         , Svg.path [ d "M23 21v-2a4 4 0 0 0-3-3.87" ] []
@@ -2947,9 +2947,9 @@ users =
 {-| video-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 -}
-videoOff : Html msg
+videoOff : IconBuilder msg
 videoOff =
-    svgFeatherIcon "video-off"
+    makeBuilder "video-off"
         [ Svg.path [ d "M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10" ] []
         , Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         ]
@@ -2958,9 +2958,9 @@ videoOff =
 {-| video
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
 -}
-video : Html msg
+video : IconBuilder msg
 video =
-    svgFeatherIcon "video"
+    makeBuilder "video"
         [ Svg.polygon [ points "23 7 16 12 23 17 23 7" ] []
         , Svg.rect [ Svg.Attributes.x "1", y "5", width "15", height "14", rx "2", ry "2" ] []
         ]
@@ -2969,9 +2969,9 @@ video =
 {-| voicemail
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line></svg>
 -}
-voicemail : Html msg
+voicemail : IconBuilder msg
 voicemail =
-    svgFeatherIcon "voicemail"
+    makeBuilder "voicemail"
         [ Svg.circle [ cx "5.5", cy "11.5", r "4.5" ] []
         , Svg.circle [ cx "18.5", cy "11.5", r "4.5" ] []
         , Svg.line [ x1 "5.5", y1 "16", x2 "18.5", y2 "16" ] []
@@ -2981,9 +2981,9 @@ voicemail =
 {-| volume-1
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
 -}
-volume1 : Html msg
+volume1 : IconBuilder msg
 volume1 =
-    svgFeatherIcon "volume-1"
+    makeBuilder "volume-1"
         [ Svg.polygon [ points "11 5 6 9 2 9 2 15 6 15 11 19 11 5" ] []
         , Svg.path [ d "M15.54 8.46a5 5 0 0 1 0 7.07" ] []
         ]
@@ -2992,9 +2992,9 @@ volume1 =
 {-| volume-2
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
 -}
-volume2 : Html msg
+volume2 : IconBuilder msg
 volume2 =
-    svgFeatherIcon "volume-2"
+    makeBuilder "volume-2"
         [ Svg.polygon [ points "11 5 6 9 2 9 2 15 6 15 11 19 11 5" ] []
         , Svg.path [ d "M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" ] []
         ]
@@ -3003,9 +3003,9 @@ volume2 =
 {-| volume-x
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
 -}
-volumeX : Html msg
+volumeX : IconBuilder msg
 volumeX =
-    svgFeatherIcon "volume-x"
+    makeBuilder "volume-x"
         [ Svg.polygon [ points "11 5 6 9 2 9 2 15 6 15 11 19 11 5" ] []
         , Svg.line [ x1 "23", y1 "9", x2 "17", y2 "15" ] []
         , Svg.line [ x1 "17", y1 "9", x2 "23", y2 "15" ] []
@@ -3015,9 +3015,9 @@ volumeX =
 {-| volume
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon></svg>
 -}
-volume : Html msg
+volume : IconBuilder msg
 volume =
-    svgFeatherIcon "volume"
+    makeBuilder "volume"
         [ Svg.polygon [ points "11 5 6 9 2 9 2 15 6 15 11 19 11 5" ] []
         ]
 
@@ -3025,9 +3025,9 @@ volume =
 {-| watch
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
 -}
-watch : Html msg
+watch : IconBuilder msg
 watch =
-    svgFeatherIcon "watch"
+    makeBuilder "watch"
         [ Svg.circle [ cx "12", cy "12", r "7" ] []
         , Svg.polyline [ points "12 9 12 12 13.5 13.5" ] []
         , Svg.path [ d "M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83" ] []
@@ -3037,9 +3037,9 @@ watch =
 {-| wifi-off
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12" y2="20"></line></svg>
 -}
-wifiOff : Html msg
+wifiOff : IconBuilder msg
 wifiOff =
-    svgFeatherIcon "wifi-off"
+    makeBuilder "wifi-off"
         [ Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         , Svg.path [ d "M16.72 11.06A10.94 10.94 0 0 1 19 12.55" ] []
         , Svg.path [ d "M5 12.55a10.94 10.94 0 0 1 5.17-2.39" ] []
@@ -3053,9 +3053,9 @@ wifiOff =
 {-| wifi
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12" y2="20"></line></svg>
 -}
-wifi : Html msg
+wifi : IconBuilder msg
 wifi =
-    svgFeatherIcon "wifi"
+    makeBuilder "wifi"
         [ Svg.path [ d "M5 12.55a11 11 0 0 1 14.08 0" ] []
         , Svg.path [ d "M1.42 9a16 16 0 0 1 21.16 0" ] []
         , Svg.path [ d "M8.53 16.11a6 6 0 0 1 6.95 0" ] []
@@ -3066,9 +3066,9 @@ wifi =
 {-| wind
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
 -}
-wind : Html msg
+wind : IconBuilder msg
 wind =
-    svgFeatherIcon "wind"
+    makeBuilder "wind"
         [ Svg.path [ d "M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" ] []
         ]
 
@@ -3076,9 +3076,9 @@ wind =
 {-| x-circle
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
 -}
-xCircle : Html msg
+xCircle : IconBuilder msg
 xCircle =
-    svgFeatherIcon "x-circle"
+    makeBuilder "x-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "15", y1 "9", x2 "9", y2 "15" ] []
         , Svg.line [ x1 "9", y1 "9", x2 "15", y2 "15" ] []
@@ -3088,9 +3088,9 @@ xCircle =
 {-| x-square
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
 -}
-xSquare : Html msg
+xSquare : IconBuilder msg
 xSquare =
-    svgFeatherIcon "x-square"
+    makeBuilder "x-square"
         [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
         , Svg.line [ x1 "9", y1 "9", x2 "15", y2 "15" ] []
         , Svg.line [ x1 "15", y1 "9", x2 "9", y2 "15" ] []
@@ -3100,9 +3100,9 @@ xSquare =
 {-| x
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 -}
-x : Html msg
+x : IconBuilder msg
 x =
-    svgFeatherIcon "x"
+    makeBuilder "x"
         [ Svg.line [ x1 "18", y1 "6", x2 "6", y2 "18" ] []
         , Svg.line [ x1 "6", y1 "6", x2 "18", y2 "18" ] []
         ]
@@ -3111,9 +3111,9 @@ x =
 {-| zap
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
 -}
-zap : Html msg
+zap : IconBuilder msg
 zap =
-    svgFeatherIcon "zap"
+    makeBuilder "zap"
         [ Svg.polygon [ points "13 2 3 14 12 14 11 22 21 10 12 10 13 2" ] []
         ]
 
@@ -3121,9 +3121,9 @@ zap =
 {-| zoom-in
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
 -}
-zoomIn : Html msg
+zoomIn : IconBuilder msg
 zoomIn =
-    svgFeatherIcon "zoom-in"
+    makeBuilder "zoom-in"
         [ Svg.circle [ cx "11", cy "11", r "8" ] []
         , Svg.line [ x1 "21", y1 "21", x2 "16.65", y2 "16.65" ] []
         , Svg.line [ x1 "11", y1 "8", x2 "11", y2 "14" ] []
@@ -3134,9 +3134,9 @@ zoomIn =
 {-| zoom-out
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
 -}
-zoomOut : Html msg
+zoomOut : IconBuilder msg
 zoomOut =
-    svgFeatherIcon "zoom-out"
+    makeBuilder "zoom-out"
         [ Svg.circle [ cx "11", cy "11", r "8" ] []
         , Svg.line [ x1 "21", y1 "21", x2 "16.65", y2 "16.65" ] []
         , Svg.line [ x1 "8", y1 "11", x2 "14", y2 "11" ] []
