@@ -247,6 +247,7 @@ module FeatherIcons
         , zoomIn
         , zoomOut
         )
+
 {-|
 # Basic Usage
 
@@ -259,7 +260,7 @@ featherIcon =
         |> FeatherIcons.toHtml []
 ```
 
-Change `FeatherIcons.feather` by the icon you prefer, A list of all icons is visible here: https://1602.github.io/elm-feather-icons/
+Change `FeatherIcons.feather` by the icon you prefer, a list of all icons is visible here: https://1602.github.io/elm-feather-icons/
 
 All icons of this package are provided as the internal type `Icon`. To turn them into an `Html msg`, simply use the `toHtml` function.
 
@@ -275,7 +276,7 @@ To customize it's class and size attributes simply use the `withClass` and `with
 
 # New Custom Icons
 
-If you'd like to keep the "feather" style while creating personally designed icons, you can use the `customIcon` function. You have to provide it with a `List (Svg Never)` that will be embeded into the icon.
+If you'd like to use same API while creating personally designed icons, you can use the `customIcon` function. You have to provide it with a `List (Svg Never)` that will be embedded into the icon.
 
 @docs customIcon
 
@@ -349,9 +350,11 @@ withSize : Float -> Icon -> Icon
 withSize size (Icon { attrs, src }) =
     Icon { attrs = { attrs | size = size }, src = src }
 
+
 {-| Set unit of size attribute of an icon, one of: "em", "ex", "px", "in", "cm", "mm", "pt", "pc", "%"
 
     Icon.download
+        |> Icon.withSize 50
         |> Icon.withSizeUnit "%"
         |> Icon.toHtml []
 -}
@@ -390,15 +393,15 @@ toHtml attributes (Icon { src, attrs }) =
             attrs.size |> toString
 
         baseAttributes =
-             [ fill "none"
-             , height <| strSize ++ attrs.sizeUnit
-             , width <| strSize ++ attrs.sizeUnit
-             , stroke "currentColor"
-             , strokeLinecap "round"
-             , strokeLinejoin "round"
-             , strokeWidth "2"
-             , viewBox "0 0 24 24"
-             ]
+            [ fill "none"
+            , height <| strSize ++ attrs.sizeUnit
+            , width <| strSize ++ attrs.sizeUnit
+            , stroke "currentColor"
+            , strokeLinecap "round"
+            , strokeLinejoin "round"
+            , strokeWidth "2"
+            , viewBox "0 0 24 24"
+            ]
 
         combinedAttributes =
             (case attrs.class of
@@ -407,7 +410,8 @@ toHtml attributes (Icon { src, attrs }) =
 
                 Nothing ->
                     baseAttributes
-            ) ++ attributes
+            )
+                ++ attributes
     in
         src
             |> List.map (Svg.map never)
@@ -417,6 +421,7 @@ toHtml attributes (Icon { src, attrs }) =
 makeBuilder : String -> List (Svg Never) -> Icon
 makeBuilder name src =
     Icon { attrs = defaultAttributes name, src = src }
+
 
 {-| activity
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
