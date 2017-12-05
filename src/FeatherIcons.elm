@@ -2,8 +2,9 @@ module FeatherIcons
     exposing
         ( toHtml
         , withClass
-        , withSizeUnit
         , withSize
+        , withSizeUnit
+        , withStrokeWidth
         , customIcon
         , Icon
         , activity
@@ -247,7 +248,6 @@ module FeatherIcons
         , zoomIn
         , zoomOut
         )
-
 {-|
 # Basic Usage
 
@@ -272,7 +272,7 @@ Feather icons are 24px size by default, and come with two css classes, `feather`
 
 To customize it's class and size attributes simply use the `withClass` and `withSize` functions before turning them into Html with `toHtml`.
 
-@docs withClass, withSize, withSizeUnit
+@docs withClass, withSize, withSizeUnit, withStrokeWidth
 
 # New Custom Icons
 
@@ -295,6 +295,7 @@ import Svg.Attributes exposing (..)
 type alias IconAttributes =
     { size : Float
     , sizeUnit : String
+    , strokeWidth : Float
     , class : Maybe String
     }
 
@@ -305,6 +306,7 @@ defaultAttributes : String -> IconAttributes
 defaultAttributes name =
     { size = 24
     , sizeUnit = ""
+    , strokeWidth = 2
     , class = Just <| "feather feather-" ++ name
     }
 
@@ -336,7 +338,7 @@ customIcon : List (Svg Never) -> Icon
 customIcon src =
     Icon
         { src = src
-        , attrs = IconAttributes 24 "" Nothing
+        , attrs = IconAttributes 24 "" 2 Nothing
         }
 
 
@@ -350,7 +352,6 @@ withSize : Float -> Icon -> Icon
 withSize size (Icon { attrs, src }) =
     Icon { attrs = { attrs | size = size }, src = src }
 
-
 {-| Set unit of size attribute of an icon, one of: "em", "ex", "px", "in", "cm", "mm", "pt", "pc", "%"
 
     Icon.download
@@ -361,6 +362,17 @@ withSize size (Icon { attrs, src }) =
 withSizeUnit : String -> Icon -> Icon
 withSizeUnit sizeUnit (Icon { attrs, src }) =
     Icon { attrs = { attrs | sizeUnit = sizeUnit }, src = src }
+
+
+{-| Set thickness of icon lines, useful when inlining icons with bold / normal text.
+
+    Icon.playCircle
+        |> Icon.withStrokeWidth 1
+        |> Icon.toHtml []
+-}
+withStrokeWidth : Float -> Icon -> Icon
+withStrokeWidth strokeWidth (Icon { attrs, src }) =
+    Icon { attrs = { attrs | strokeWidth = strokeWidth }, src = src }
 
 
 {-| Overwrite class attribute of an icon
@@ -399,7 +411,7 @@ toHtml attributes (Icon { src, attrs }) =
             , stroke "currentColor"
             , strokeLinecap "round"
             , strokeLinejoin "round"
-            , strokeWidth "2"
+            , strokeWidth <| toString attrs.strokeWidth
             , viewBox "0 0 24 24"
             ]
 
@@ -410,8 +422,7 @@ toHtml attributes (Icon { src, attrs }) =
 
                 Nothing ->
                     baseAttributes
-            )
-                ++ attributes
+            ) ++ attributes
     in
         src
             |> List.map (Svg.map never)
@@ -421,7 +432,6 @@ toHtml attributes (Icon { src, attrs }) =
 makeBuilder : String -> List (Svg Never) -> Icon
 makeBuilder name src =
     Icon { attrs = defaultAttributes name, src = src }
-
 
 {-| activity
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
