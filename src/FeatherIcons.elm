@@ -2,6 +2,7 @@ module FeatherIcons
     exposing
         ( toHtml
         , withClass
+        , withViewBox
         , withSize
         , withSizeUnit
         , withStrokeWidth
@@ -278,7 +279,7 @@ To customize it's class and size attributes simply use the `withClass` and `with
 
 If you'd like to use same API while creating personally designed icons, you can use the `customIcon` function. You have to provide it with a `List (Svg Never)` that will be embedded into the icon.
 
-@docs customIcon
+@docs customIcon, withViewBox
 
 # Feather Icons List
 
@@ -297,6 +298,7 @@ type alias IconAttributes =
     , sizeUnit : String
     , strokeWidth : Float
     , class : Maybe String
+    , viewBox : String
     }
 
 
@@ -308,6 +310,7 @@ defaultAttributes name =
     , sizeUnit = ""
     , strokeWidth = 2
     , class = Just <| "feather feather-" ++ name
+    , viewBox = "0 0 24 24"
     }
 
 
@@ -328,17 +331,17 @@ type Icon
     , Svg.line [ x1 "21", y1 "18", x2 "3", y2 "18" ] []
     ]
         |> customIcon
-        |> withSize 2.1
-        |> withSizeUnit "em"
+        |> withSize 26
+        |> withViewBox "0 0 26 26"
         |> toHtml []
 
-Example output: <svg xmlns="http://www.w3.org/2000/svg" width="2.1em" height="2.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+Example output: <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
 -}
 customIcon : List (Svg Never) -> Icon
 customIcon src =
     Icon
         { src = src
-        , attrs = IconAttributes 24 "" 2 Nothing
+        , attrs = IconAttributes 24 "" 2 Nothing "0 0 24 24"
         }
 
 
@@ -373,6 +376,16 @@ withSizeUnit sizeUnit (Icon { attrs, src }) =
 withStrokeWidth : Float -> Icon -> Icon
 withStrokeWidth strokeWidth (Icon { attrs, src }) =
     Icon { attrs = { attrs | strokeWidth = strokeWidth }, src = src }
+
+{-| Set viewBox attribute for a custom icon
+
+    Icon.custom [ customSvgPathFittingWithin100pxSquare ]
+        |> Icon.withViewBox "0 0 100 100"
+        |> Icon.toHtml []
+-}
+withViewBox : String -> Icon -> Icon
+withViewBox viewBox (Icon { attrs, src }) =
+    Icon { attrs = { attrs | viewBox = viewBox }, src = src }
 
 
 {-| Overwrite class attribute of an icon
@@ -412,7 +425,7 @@ toHtml attributes (Icon { src, attrs }) =
             , strokeLinecap "round"
             , strokeLinejoin "round"
             , strokeWidth <| toString attrs.strokeWidth
-            , viewBox "0 0 24 24"
+            , viewBox attrs.viewBox
             ]
 
         combinedAttributes =
