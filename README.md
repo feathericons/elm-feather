@@ -2,30 +2,36 @@
 
 Embeddable svg icons by https://feathericons.com/
 
-# Usage
+## Usage
 
-## As elm package
+There are two ways of using feather icons in your project. One is friction-free when you don't mind adding a dependency which will include full set of svg icons. Another is more optimat in terms of build size, allowing you to pick selection of svg functions without depending on this package.
 
-### Install
+If you are building an app, then the best option for you is the first one, just install dependency.
+
+If you are building a library and counting every byte, then you might want to go with lighter version and to use only a limited selection of icons you really need.
+
+### As elm package
+
+#### Install
 
 ```sh
 elm package install 1602/elm-feather
 ```
 
-### Import
+#### Import
 
 ```elm
 import FeatherIcons
 ```
 
-### Use
+#### Use
 
 ```elm
 FeatherIcons.chevronsLeft
     |> FeatherIcons.toHtml []
 ```
 
-## As selection of functions
+### As selection of functions
 
 In case if you just want subset of icons or don't want additional dependency
 
@@ -33,7 +39,7 @@ In case if you just want subset of icons or don't want additional dependency
 2. Select icons you need
 3. Grab generated code
 
-### Demo
+#### Demo
 
 [![https://gyazo.com/fa2022e0ff6fae010070e20f2e55f71b](https://i.gyazo.com/fa2022e0ff6fae010070e20f2e55f71b.gif)](https://gyazo.com/fa2022e0ff6fae010070e20f2e55f71b)
 
