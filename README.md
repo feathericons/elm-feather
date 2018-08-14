@@ -45,7 +45,7 @@ In case if you just want subset of icons or don't want additional dependency
 
 # Contribution
 
-This package semi-automatically generated using https://github.com/1602/elm-feather-icons as builder and https://github.com/colebemis/feather as source.
+This package semi-automatically generated using https://github.com/1602/elm-feather-icons as builder and https://github.com/feathericons/feather as source.
 
 # Roadmap
 
