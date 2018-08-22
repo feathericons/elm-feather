@@ -443,7 +443,7 @@ toHtml : List (Svg.Attribute msg) -> Icon -> Html msg
 toHtml attributes (Icon { src, attrs }) =
     let
         strSize =
-            attrs.size |> toString
+            attrs.size |> String.fromFloat
 
         baseAttributes =
             [ fill "none"
@@ -452,7 +452,7 @@ toHtml attributes (Icon { src, attrs }) =
             , stroke "currentColor"
             , strokeLinecap "round"
             , strokeLinejoin "round"
-            , strokeWidth <| toString attrs.strokeWidth
+            , strokeWidth <| String.fromFloat attrs.strokeWidth
             , viewBox attrs.viewBox
             ]
 
