@@ -15,7 +15,7 @@ If you are building a library and counting every byte, then you might want to go
 #### Install
 
 ```sh
-elm install 1602/elm-feather
+elm install feathericons/elm-feather
 ```
 
 #### Import
