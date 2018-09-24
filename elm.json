@@ -1,9 +1,9 @@
 {
     "type": "package",
-    "name": "1602/elm-feather",
+    "name": "feathericons/elm-feather",
     "summary": "Feather icons for elm",
     "license": "BSD-3-Clause",
-    "version": "2.3.4",
+    "version": "1.0.0",
     "exposed-modules": [
         "FeatherIcons"
     ],
