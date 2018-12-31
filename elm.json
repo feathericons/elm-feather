@@ -3,7 +3,7 @@
     "name": "feathericons/elm-feather",
     "summary": "Feather icons for elm",
     "license": "BSD-3-Clause",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "exposed-modules": [
         "FeatherIcons"
     ],
