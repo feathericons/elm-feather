@@ -117,6 +117,7 @@ module FeatherIcons
         , folderMinus
         , folderPlus
         , folder
+        , frown
         , gift
         , gitBranch
         , gitCommit
@@ -153,6 +154,7 @@ module FeatherIcons
         , map
         , maximize2
         , maximize
+        , meh
         , menu
         , messageCircle
         , messageSquare
@@ -221,6 +223,7 @@ module FeatherIcons
         , slash
         , sliders
         , smartphone
+        , smile
         , speaker
         , square
         , star
@@ -312,7 +315,7 @@ If you'd like to use same API while creating personally designed icons, you can 
 
 # Feather Icons List
 
-@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, coffee, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, dollarSign, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, home, image, inbox, info, instagram, italic, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
+@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, coffee, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, dollarSign, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, frown, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, home, image, inbox, info, instagram, italic, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, meh, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, smile, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
 -}
 
 import Html exposing (Html)
@@ -1842,6 +1845,20 @@ folder =
         ]
 
 
+{-| frown
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48cGF0aCBkPSJNMTYgMTZzLTEuNS0yLTQtMi00IDItNCAyIj48L3BhdGg+PGxpbmUgeDE9IjkiIHkxPSI5IiB4Mj0iOS4wMSIgeTI9IjkiPjwvbGluZT48bGluZSB4MT0iMTUiIHkxPSI5IiB4Mj0iMTUuMDEiIHkyPSI5Ij48L2xpbmU+PC9zdmc+)
+-}
+frown : Icon
+frown =
+    makeBuilder "frown"
+        [ Svg.circle [ cx "12", cy "12", r "10" ] []
+        , Svg.path [ d "M16 16s-1.5-2-4-2-4 2-4 2" ] []
+        , Svg.line [ x1 "9", y1 "9", x2 "9.01", y2 "9" ] []
+        , Svg.line [ x1 "15", y1 "9", x2 "15.01", y2 "9" ] []
+        ]
+
+
 {-| gift
 
 ![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjIwIDEyIDIwIDIyIDQgMjIgNCAxMiI+PC9wb2x5bGluZT48cmVjdCB4PSIyIiB5PSI3IiB3aWR0aD0iMjAiIGhlaWdodD0iNSI+PC9yZWN0PjxsaW5lIHgxPSIxMiIgeTE9IjIyIiB4Mj0iMTIiIHkyPSI3Ij48L2xpbmU+PHBhdGggZD0iTTEyIDdINy41YTIuNSAyLjUgMCAwIDEgMC01QzExIDIgMTIgNyAxMiA3eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMiA3aDQuNWEyLjUgMi41IDAgMCAwIDAtNUMxMyAyIDEyIDcgMTIgN3oiPjwvcGF0aD48L3N2Zz4=)
@@ -2311,6 +2328,20 @@ maximize : Icon
 maximize =
     makeBuilder "maximize"
         [ Svg.path [ d "M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" ] []
+        ]
+
+
+{-| meh
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48bGluZSB4MT0iOCIgeTE9IjE1IiB4Mj0iMTYiIHkyPSIxNSI+PC9saW5lPjxsaW5lIHgxPSI5IiB5MT0iOSIgeDI9IjkuMDEiIHkyPSI5Ij48L2xpbmU+PGxpbmUgeDE9IjE1IiB5MT0iOSIgeDI9IjE1LjAxIiB5Mj0iOSI+PC9saW5lPjwvc3ZnPg==)
+-}
+meh : Icon
+meh =
+    makeBuilder "meh"
+        [ Svg.circle [ cx "12", cy "12", r "10" ] []
+        , Svg.line [ x1 "8", y1 "15", x2 "16", y2 "15" ] []
+        , Svg.line [ x1 "9", y1 "9", x2 "9.01", y2 "9" ] []
+        , Svg.line [ x1 "15", y1 "9", x2 "15.01", y2 "9" ] []
         ]
 
 
@@ -3174,6 +3205,20 @@ smartphone =
         ]
 
 
+{-| smile
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48cGF0aCBkPSJNOCAxNHMxLjUgMiA0IDIgNC0yIDQtMiI+PC9wYXRoPjxsaW5lIHgxPSI5IiB5MT0iOSIgeDI9IjkuMDEiIHkyPSI5Ij48L2xpbmU+PGxpbmUgeDE9IjE1IiB5MT0iOSIgeDI9IjE1LjAxIiB5Mj0iOSI+PC9saW5lPjwvc3ZnPg==)
+-}
+smile : Icon
+smile =
+    makeBuilder "smile"
+        [ Svg.circle [ cx "12", cy "12", r "10" ] []
+        , Svg.path [ d "M8 14s1.5 2 4 2 4-2 4-2" ] []
+        , Svg.line [ x1 "9", y1 "9", x2 "9.01", y2 "9" ] []
+        , Svg.line [ x1 "15", y1 "9", x2 "15.01", y2 "9" ] []
+        ]
+
+
 {-| speaker
 
 ![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGNpcmNsZSBjeD0iMTIiIGN5PSIxNCIgcj0iNCI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iNiIgeDI9IjEyIiB5Mj0iNiI+PC9saW5lPjwvc3ZnPg==)
@@ -4000,6 +4045,7 @@ icons =
     , ( "folder-minus", folderMinus )
     , ( "folder-plus", folderPlus )
     , ( "folder", folder )
+    , ( "frown", frown )
     , ( "gift", gift )
     , ( "git-branch", gitBranch )
     , ( "git-commit", gitCommit )
@@ -4036,6 +4082,7 @@ icons =
     , ( "map", map )
     , ( "maximize-2", maximize2 )
     , ( "maximize", maximize )
+    , ( "meh", meh )
     , ( "menu", menu )
     , ( "message-circle", messageCircle )
     , ( "message-square", messageSquare )
@@ -4104,6 +4151,7 @@ icons =
     , ( "slash", slash )
     , ( "sliders", sliders )
     , ( "smartphone", smartphone )
+    , ( "smile", smile )
     , ( "speaker", speaker )
     , ( "square", square )
     , ( "star", star )
