@@ -75,7 +75,9 @@ module FeatherIcons
         , cloud
         , code
         , codepen
+        , codesandbox
         , coffee
+        , columns
         , command
         , compass
         , copy
@@ -107,6 +109,7 @@ module FeatherIcons
         , facebook
         , fastForward
         , feather
+        , figma
         , fileMinus
         , filePlus
         , fileText
@@ -117,6 +120,7 @@ module FeatherIcons
         , folderMinus
         , folderPlus
         , folder
+        , framer
         , frown
         , gift
         , gitBranch
@@ -132,12 +136,14 @@ module FeatherIcons
         , headphones
         , heart
         , helpCircle
+        , hexagon
         , home
         , image
         , inbox
         , info
         , instagram
         , italic
+        , key
         , layers
         , layout
         , lifeBuoy
@@ -169,6 +175,7 @@ module FeatherIcons
         , moon
         , moreHorizontal
         , moreVertical
+        , mousePointer
         , move
         , music
         , navigation2
@@ -178,6 +185,7 @@ module FeatherIcons
         , paperclip
         , pauseCircle
         , pause
+        , penTool
         , percent
         , phoneCall
         , phoneForwarded
@@ -240,6 +248,7 @@ module FeatherIcons
         , thumbsUp
         , toggleLeft
         , toggleRight
+        , tool
         , trash2
         , trash
         , trello
@@ -248,6 +257,7 @@ module FeatherIcons
         , triangle
         , truck
         , tv
+        , twitch
         , twitter
         , type_
         , umbrella
@@ -273,6 +283,7 @@ module FeatherIcons
         , wifi
         , wind
         , xCircle
+        , xOctagon
         , xSquare
         , x
         , youtube
@@ -315,7 +326,7 @@ If you'd like to use same API while creating personally designed icons, you can 
 
 # Feather Icons List
 
-@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, coffee, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, dollarSign, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, frown, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, home, image, inbox, info, instagram, italic, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, meh, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, smile, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
+@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, codesandbox, coffee, columns, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, dollarSign, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, figma, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, framer, frown, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, hexagon, home, image, inbox, info, instagram, italic, key, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, meh, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, mousePointer, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, penTool, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, smile, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, tool, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitch, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xOctagon, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
 -}
 
 import Html exposing (Html)
@@ -512,40 +523,40 @@ airplay =
 
 {-| alert-circle
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjE2IiB4Mj0iMTIiIHkyPSIxNiI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjE2IiB4Mj0iMTIuMDEiIHkyPSIxNiI+PC9saW5lPjwvc3ZnPg==)
 -}
 alertCircle : Icon
 alertCircle =
     makeBuilder "alert-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "12" ] []
-        , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
+        , Svg.line [ x1 "12", y1 "16", x2 "12.01", y2 "16" ] []
         ]
 
 
 {-| alert-octagon
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5Z29uIHBvaW50cz0iNy44NiAyIDE2LjE0IDIgMjIgNy44NiAyMiAxNi4xNCAxNi4xNCAyMiA3Ljg2IDIyIDIgMTYuMTQgMiA3Ljg2IDcuODYgMiI+PC9wb2x5Z29uPjxsaW5lIHgxPSIxMiIgeTE9IjgiIHgyPSIxMiIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTYiIHgyPSIxMiIgeTI9IjE2Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5Z29uIHBvaW50cz0iNy44NiAyIDE2LjE0IDIgMjIgNy44NiAyMiAxNi4xNCAxNi4xNCAyMiA3Ljg2IDIyIDIgMTYuMTQgMiA3Ljg2IDcuODYgMiI+PC9wb2x5Z29uPjxsaW5lIHgxPSIxMiIgeTE9IjgiIHgyPSIxMiIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTYiIHgyPSIxMi4wMSIgeTI9IjE2Ij48L2xpbmU+PC9zdmc+)
 -}
 alertOctagon : Icon
 alertOctagon =
     makeBuilder "alert-octagon"
         [ Svg.polygon [ points "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" ] []
         , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "12" ] []
-        , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
+        , Svg.line [ x1 "12", y1 "16", x2 "12.01", y2 "16" ] []
         ]
 
 
 {-| alert-triangle
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMC4yOSAzLjg2TDEuODIgMThhMiAyIDAgMCAwIDEuNzEgM2gxNi45NGEyIDIgMCAwIDAgMS43MS0zTDEzLjcxIDMuODZhMiAyIDAgMCAwLTMuNDIgMHoiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSI5IiB4Mj0iMTIiIHkyPSIxMyI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjE3IiB4Mj0iMTIiIHkyPSIxNyI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMC4yOSAzLjg2TDEuODIgMThhMiAyIDAgMCAwIDEuNzEgM2gxNi45NGEyIDIgMCAwIDAgMS43MS0zTDEzLjcxIDMuODZhMiAyIDAgMCAwLTMuNDIgMHoiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSI5IiB4Mj0iMTIiIHkyPSIxMyI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjE3IiB4Mj0iMTIuMDEiIHkyPSIxNyI+PC9saW5lPjwvc3ZnPg==)
 -}
 alertTriangle : Icon
 alertTriangle =
     makeBuilder "alert-triangle"
         [ Svg.path [ d "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" ] []
         , Svg.line [ x1 "12", y1 "9", x2 "12", y2 "13" ] []
-        , Svg.line [ x1 "12", y1 "17", x2 "12", y2 "17" ] []
+        , Svg.line [ x1 "12", y1 "17", x2 "12.01", y2 "17" ] []
         ]
 
 
@@ -873,24 +884,28 @@ battery =
 
 {-| bell-off
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04LjU2IDIuOUE3IDcgMCAwIDEgMTkgOXY0bS0yIDRIMmEzIDMgMCAwIDAgMy0zVjlhNyA3IDAgMCAxIC43OC0zLjIyTTEzLjczIDIxYTIgMiAwIDAgMS0zLjQ2IDAiPjwvcGF0aD48bGluZSB4MT0iMSIgeTE9IjEiIHgyPSIyMyIgeTI9IjIzIj48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMy43MyAyMWEyIDIgMCAwIDEtMy40NiAwIj48L3BhdGg+PHBhdGggZD0iTTE4LjYzIDEzQTE3Ljg5IDE3Ljg5IDAgMCAxIDE4IDgiPjwvcGF0aD48cGF0aCBkPSJNNi4yNiA2LjI2QTUuODYgNS44NiAwIDAgMCA2IDhjMCA3LTMgOS0zIDloMTQiPjwvcGF0aD48cGF0aCBkPSJNMTggOGE2IDYgMCAwIDAtOS4zMy01Ij48L3BhdGg+PGxpbmUgeDE9IjEiIHkxPSIxIiB4Mj0iMjMiIHkyPSIyMyI+PC9saW5lPjwvc3ZnPg==)
 -}
 bellOff : Icon
 bellOff =
     makeBuilder "bell-off"
-        [ Svg.path [ d "M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0" ] []
+        [ Svg.path [ d "M13.73 21a2 2 0 0 1-3.46 0" ] []
+        , Svg.path [ d "M18.63 13A17.89 17.89 0 0 1 18 8" ] []
+        , Svg.path [ d "M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14" ] []
+        , Svg.path [ d "M18 8a6 6 0 0 0-9.33-5" ] []
         , Svg.line [ x1 "1", y1 "1", x2 "23", y2 "23" ] []
         ]
 
 
 {-| bell
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMiAxN0gyYTMgMyAwIDAgMCAzLTNWOWE3IDcgMCAwIDEgMTQgMHY1YTMgMyAwIDAgMCAzIDN6bS04LjI3IDRhMiAyIDAgMCAxLTMuNDYgMCI+PC9wYXRoPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xOCA4QTYgNiAwIDAgMCA2IDhjMCA3LTMgOS0zIDloMThzLTMtMi0zLTkiPjwvcGF0aD48cGF0aCBkPSJNMTMuNzMgMjFhMiAyIDAgMCAxLTMuNDYgMCI+PC9wYXRoPjwvc3ZnPg==)
 -}
 bell : Icon
 bell =
     makeBuilder "bell"
-        [ Svg.path [ d "M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0" ] []
+        [ Svg.path [ d "M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" ] []
+        , Svg.path [ d "M13.73 21a2 2 0 0 1-3.46 0" ] []
         ]
 
 
@@ -954,14 +969,14 @@ bookmark =
 
 {-| box
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMi44OSAxLjQ1bDggNEEyIDIgMCAwIDEgMjIgNy4yNHY5LjUzYTIgMiAwIDAgMS0xLjExIDEuNzlsLTggNGEyIDIgMCAwIDEtMS43OSAwbC04LTRhMiAyIDAgMCAxLTEuMS0xLjhWNy4yNGEyIDIgMCAwIDEgMS4xMS0xLjc5bDgtNGEyIDIgMCAwIDEgMS43OCAweiI+PC9wYXRoPjxwb2x5bGluZSBwb2ludHM9IjIuMzIgNi4xNiAxMiAxMSAyMS42OCA2LjE2Ij48L3BvbHlsaW5lPjxsaW5lIHgxPSIxMiIgeTE9IjIyLjc2IiB4Mj0iMTIiIHkyPSIxMSI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAxNlY4YTIgMiAwIDAgMC0xLTEuNzNsLTctNGEyIDIgMCAwIDAtMiAwbC03IDRBMiAyIDAgMCAwIDMgOHY4YTIgMiAwIDAgMCAxIDEuNzNsNyA0YTIgMiAwIDAgMCAyIDBsNy00QTIgMiAwIDAgMCAyMSAxNnoiPjwvcGF0aD48cG9seWxpbmUgcG9pbnRzPSIzLjI3IDYuOTYgMTIgMTIuMDEgMjAuNzMgNi45NiI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSIyMi4wOCIgeDI9IjEyIiB5Mj0iMTIiPjwvbGluZT48L3N2Zz4=)
 -}
 box : Icon
 box =
     makeBuilder "box"
-        [ Svg.path [ d "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" ] []
-        , Svg.polyline [ points "2.32 6.16 12 11 21.68 6.16" ] []
-        , Svg.line [ x1 "12", y1 "22.76", x2 "12", y2 "11" ] []
+        [ Svg.path [ d "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" ] []
+        , Svg.polyline [ points "3.27 6.96 12 12.01 20.73 6.96" ] []
+        , Svg.line [ x1 "12", y1 "22.08", x2 "12", y2 "12" ] []
         ]
 
 
@@ -1017,13 +1032,13 @@ camera =
 
 {-| cast
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDE2LjFBNSA1IDAgMCAxIDUuOSAyME0yIDEyLjA1QTkgOSAwIDAgMSA5Ljk1IDIwTTIgOFY2YTIgMiAwIDAgMSAyLTJoMTZhMiAyIDAgMCAxIDIgMnYxMmEyIDIgMCAwIDEtMiAyaC02Ij48L3BhdGg+PGxpbmUgeDE9IjIiIHkxPSIyMCIgeDI9IjIiIHkyPSIyMCI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDE2LjFBNSA1IDAgMCAxIDUuOSAyME0yIDEyLjA1QTkgOSAwIDAgMSA5Ljk1IDIwTTIgOFY2YTIgMiAwIDAgMSAyLTJoMTZhMiAyIDAgMCAxIDIgMnYxMmEyIDIgMCAwIDEtMiAyaC02Ij48L3BhdGg+PGxpbmUgeDE9IjIiIHkxPSIyMCIgeDI9IjIuMDEiIHkyPSIyMCI+PC9saW5lPjwvc3ZnPg==)
 -}
 cast : Icon
 cast =
     makeBuilder "cast"
         [ Svg.path [ d "M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" ] []
-        , Svg.line [ x1 "2", y1 "20", x2 "2", y2 "20" ] []
+        , Svg.line [ x1 "2", y1 "20", x2 "2.01", y2 "20" ] []
         ]
 
 
@@ -1261,18 +1276,18 @@ cloudRain =
 
 {-| cloud-snow
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMCAxNy41OEE1IDUgMCAwIDAgMTggOGgtMS4yNkE4IDggMCAxIDAgNCAxNi4yNSI+PC9wYXRoPjxsaW5lIHgxPSI4IiB5MT0iMTYiIHgyPSI4IiB5Mj0iMTYiPjwvbGluZT48bGluZSB4MT0iOCIgeTE9IjIwIiB4Mj0iOCIgeTI9IjIwIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMiIgeTI9IjE4Ij48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMjIiIHgyPSIxMiIgeTI9IjIyIj48L2xpbmU+PGxpbmUgeDE9IjE2IiB5MT0iMTYiIHgyPSIxNiIgeTI9IjE2Ij48L2xpbmU+PGxpbmUgeDE9IjE2IiB5MT0iMjAiIHgyPSIxNiIgeTI9IjIwIj48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMCAxNy41OEE1IDUgMCAwIDAgMTggOGgtMS4yNkE4IDggMCAxIDAgNCAxNi4yNSI+PC9wYXRoPjxsaW5lIHgxPSI4IiB5MT0iMTYiIHgyPSI4LjAxIiB5Mj0iMTYiPjwvbGluZT48bGluZSB4MT0iOCIgeTE9IjIwIiB4Mj0iOC4wMSIgeTI9IjIwIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMi4wMSIgeTI9IjE4Ij48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMjIiIHgyPSIxMi4wMSIgeTI9IjIyIj48L2xpbmU+PGxpbmUgeDE9IjE2IiB5MT0iMTYiIHgyPSIxNi4wMSIgeTI9IjE2Ij48L2xpbmU+PGxpbmUgeDE9IjE2IiB5MT0iMjAiIHgyPSIxNi4wMSIgeTI9IjIwIj48L2xpbmU+PC9zdmc+)
 -}
 cloudSnow : Icon
 cloudSnow =
     makeBuilder "cloud-snow"
         [ Svg.path [ d "M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" ] []
-        , Svg.line [ x1 "8", y1 "16", x2 "8", y2 "16" ] []
-        , Svg.line [ x1 "8", y1 "20", x2 "8", y2 "20" ] []
-        , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "18" ] []
-        , Svg.line [ x1 "12", y1 "22", x2 "12", y2 "22" ] []
-        , Svg.line [ x1 "16", y1 "16", x2 "16", y2 "16" ] []
-        , Svg.line [ x1 "16", y1 "20", x2 "16", y2 "20" ] []
+        , Svg.line [ x1 "8", y1 "16", x2 "8.01", y2 "16" ] []
+        , Svg.line [ x1 "8", y1 "20", x2 "8.01", y2 "20" ] []
+        , Svg.line [ x1 "12", y1 "18", x2 "12.01", y2 "18" ] []
+        , Svg.line [ x1 "12", y1 "22", x2 "12.01", y2 "22" ] []
+        , Svg.line [ x1 "16", y1 "16", x2 "16.01", y2 "16" ] []
+        , Svg.line [ x1 "16", y1 "20", x2 "16.01", y2 "20" ] []
         ]
 
 
@@ -1314,6 +1329,22 @@ codepen =
         ]
 
 
+{-| codesandbox
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAxNlY4YTIgMiAwIDAgMC0xLTEuNzNsLTctNGEyIDIgMCAwIDAtMiAwbC03IDRBMiAyIDAgMCAwIDMgOHY4YTIgMiAwIDAgMCAxIDEuNzNsNyA0YTIgMiAwIDAgMCAyIDBsNy00QTIgMiAwIDAgMCAyMSAxNnoiPjwvcGF0aD48cG9seWxpbmUgcG9pbnRzPSI3LjUgNC4yMSAxMiA2LjgxIDE2LjUgNC4yMSI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSI3LjUgMTkuNzkgNy41IDE0LjYgMyAxMiI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSIyMSAxMiAxNi41IDE0LjYgMTYuNSAxOS43OSI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSIzLjI3IDYuOTYgMTIgMTIuMDEgMjAuNzMgNi45NiI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSIyMi4wOCIgeDI9IjEyIiB5Mj0iMTIiPjwvbGluZT48L3N2Zz4=)
+-}
+codesandbox : Icon
+codesandbox =
+    makeBuilder "codesandbox"
+        [ Svg.path [ d "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" ] []
+        , Svg.polyline [ points "7.5 4.21 12 6.81 16.5 4.21" ] []
+        , Svg.polyline [ points "7.5 19.79 7.5 14.6 3 12" ] []
+        , Svg.polyline [ points "21 12 16.5 14.6 16.5 19.79" ] []
+        , Svg.polyline [ points "3.27 6.96 12 12.01 20.73 6.96" ] []
+        , Svg.line [ x1 "12", y1 "22.08", x2 "12", y2 "12" ] []
+        ]
+
+
 {-| coffee
 
 ![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xOCA4aDFhNCA0IDAgMCAxIDAgOGgtMSI+PC9wYXRoPjxwYXRoIGQ9Ik0yIDhoMTZ2OWE0IDQgMCAwIDEtNCA0SDZhNCA0IDAgMCAxLTQtNFY4eiI+PC9wYXRoPjxsaW5lIHgxPSI2IiB5MT0iMSIgeDI9IjYiIHkyPSI0Ij48L2xpbmU+PGxpbmUgeDE9IjEwIiB5MT0iMSIgeDI9IjEwIiB5Mj0iNCI+PC9saW5lPjxsaW5lIHgxPSIxNCIgeTE9IjEiIHgyPSIxNCIgeTI9IjQiPjwvbGluZT48L3N2Zz4=)
@@ -1326,6 +1357,17 @@ coffee =
         , Svg.line [ x1 "6", y1 "1", x2 "6", y2 "4" ] []
         , Svg.line [ x1 "10", y1 "1", x2 "10", y2 "4" ] []
         , Svg.line [ x1 "14", y1 "1", x2 "14", y2 "4" ] []
+        ]
+
+
+{-| columns
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMiAzaDdhMiAyIDAgMCAxIDIgMnYxNGEyIDIgMCAwIDEtMiAyaC03bTAtMThINWEyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoN20wLTE4djE4Ij48L3BhdGg+PC9zdmc+)
+-}
+columns : Icon
+columns =
+    makeBuilder "columns"
+        [ Svg.path [ d "M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18" ] []
         ]
 
 
@@ -1608,36 +1650,36 @@ droplet =
 
 {-| edit-2
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5Z29uIHBvaW50cz0iMTYgMyAyMSA4IDggMjEgMyAyMSAzIDE2IDE2IDMiPjwvcG9seWdvbj48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNyAzYTIuODI4IDIuODI4IDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVMMTcgM3oiPjwvcGF0aD48L3N2Zz4=)
 -}
 edit2 : Icon
 edit2 =
     makeBuilder "edit-2"
-        [ Svg.polygon [ points "16 3 21 8 8 21 3 21 3 16 16 3" ] []
+        [ Svg.path [ d "M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" ] []
         ]
 
 
 {-| edit-3
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5Z29uIHBvaW50cz0iMTQgMiAxOCA2IDcgMTcgMyAxNyAzIDEzIDE0IDIiPjwvcG9seWdvbj48bGluZSB4MT0iMyIgeTE9IjIyIiB4Mj0iMjEiIHkyPSIyMiI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMiAyMGg5Ij48L3BhdGg+PHBhdGggZD0iTTE2LjUgMy41YTIuMTIxIDIuMTIxIDAgMCAxIDMgM0w3IDE5bC00IDEgMS00TDE2LjUgMy41eiI+PC9wYXRoPjwvc3ZnPg==)
 -}
 edit3 : Icon
 edit3 =
     makeBuilder "edit-3"
-        [ Svg.polygon [ points "14 2 18 6 7 17 3 17 3 13 14 2" ] []
-        , Svg.line [ x1 "3", y1 "22", x2 "21", y2 "22" ] []
+        [ Svg.path [ d "M12 20h9" ] []
+        , Svg.path [ d "M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" ] []
         ]
 
 
 {-| edit
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMCAxNC42NlYyMGEyIDIgMCAwIDEtMiAySDRhMiAyIDAgMCAxLTItMlY2YTIgMiAwIDAgMSAyLTJoNS4zNCI+PC9wYXRoPjxwb2x5Z29uIHBvaW50cz0iMTggMiAyMiA2IDEyIDE2IDggMTYgOCAxMiAxOCAyIj48L3BvbHlnb24+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMSA0SDRhMiAyIDAgMCAwLTIgMnYxNGEyIDIgMCAwIDAgMiAyaDE0YTIgMiAwIDAgMCAyLTJ2LTciPjwvcGF0aD48cGF0aCBkPSJNMTguNSAyLjVhMi4xMjEgMi4xMjEgMCAwIDEgMyAzTDEyIDE1bC00IDEgMS00IDkuNS05LjV6Ij48L3BhdGg+PC9zdmc+)
 -}
 edit : Icon
 edit =
     makeBuilder "edit"
-        [ Svg.path [ d "M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34" ] []
-        , Svg.polygon [ points "18 2 22 6 12 16 8 16 8 12 18 2" ] []
+        [ Svg.path [ d "M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" ] []
+        , Svg.path [ d "M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" ] []
         ]
 
 
@@ -1711,6 +1753,21 @@ feather =
         [ Svg.path [ d "M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" ] []
         , Svg.line [ x1 "16", y1 "8", x2 "2", y2 "22" ] []
         , Svg.line [ x1 "17.5", y1 "15", x2 "9", y2 "15" ] []
+        ]
+
+
+{-| figma
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik01IDUuNUEzLjUgMy41IDAgMCAxIDguNSAySDEydjdIOC41QTMuNSAzLjUgMCAwIDEgNSA1LjV6Ij48L3BhdGg+PHBhdGggZD0iTTEyIDJoMy41YTMuNSAzLjUgMCAxIDEgMCA3SDEyVjJ6Ij48L3BhdGg+PHBhdGggZD0iTTEyIDEyLjVhMy41IDMuNSAwIDEgMSA3IDAgMy41IDMuNSAwIDEgMS03IDB6Ij48L3BhdGg+PHBhdGggZD0iTTUgMTkuNUEzLjUgMy41IDAgMCAxIDguNSAxNkgxMnYzLjVhMy41IDMuNSAwIDEgMS03IDB6Ij48L3BhdGg+PHBhdGggZD0iTTUgMTIuNUEzLjUgMy41IDAgMCAxIDguNSA5SDEydjdIOC41QTMuNSAzLjUgMCAwIDEgNSAxMi41eiI+PC9wYXRoPjwvc3ZnPg==)
+-}
+figma : Icon
+figma =
+    makeBuilder "figma"
+        [ Svg.path [ d "M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" ] []
+        , Svg.path [ d "M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" ] []
+        , Svg.path [ d "M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" ] []
+        , Svg.path [ d "M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" ] []
+        , Svg.path [ d "M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" ] []
         ]
 
 
@@ -1842,6 +1899,17 @@ folder : Icon
 folder =
     makeBuilder "folder"
         [ Svg.path [ d "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" ] []
+        ]
+
+
+{-| framer
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik01IDE2VjloMTRWMkg1bDE0IDE0aC03bS03IDBsNyA3di03bS03IDBoNyI+PC9wYXRoPjwvc3ZnPg==)
+-}
+framer : Icon
+framer =
+    makeBuilder "framer"
+        [ Svg.path [ d "M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7" ] []
         ]
 
 
@@ -1979,15 +2047,15 @@ grid =
 
 {-| hard-drive
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIyMiIgeTE9IjEyIiB4Mj0iMiIgeTI9IjEyIj48L2xpbmU+PHBhdGggZD0iTTUuNDUgNS4xMUwyIDEydjZhMiAyIDAgMCAwIDIgMmgxNmEyIDIgMCAwIDAgMi0ydi02bC0zLjQ1LTYuODlBMiAyIDAgMCAwIDE2Ljc2IDRINy4yNGEyIDIgMCAwIDAtMS43OSAxLjExeiI+PC9wYXRoPjxsaW5lIHgxPSI2IiB5MT0iMTYiIHgyPSI2IiB5Mj0iMTYiPjwvbGluZT48bGluZSB4MT0iMTAiIHkxPSIxNiIgeDI9IjEwIiB5Mj0iMTYiPjwvbGluZT48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIyMiIgeTE9IjEyIiB4Mj0iMiIgeTI9IjEyIj48L2xpbmU+PHBhdGggZD0iTTUuNDUgNS4xMUwyIDEydjZhMiAyIDAgMCAwIDIgMmgxNmEyIDIgMCAwIDAgMi0ydi02bC0zLjQ1LTYuODlBMiAyIDAgMCAwIDE2Ljc2IDRINy4yNGEyIDIgMCAwIDAtMS43OSAxLjExeiI+PC9wYXRoPjxsaW5lIHgxPSI2IiB5MT0iMTYiIHgyPSI2LjAxIiB5Mj0iMTYiPjwvbGluZT48bGluZSB4MT0iMTAiIHkxPSIxNiIgeDI9IjEwLjAxIiB5Mj0iMTYiPjwvbGluZT48L3N2Zz4=)
 -}
 hardDrive : Icon
 hardDrive =
     makeBuilder "hard-drive"
         [ Svg.line [ x1 "22", y1 "12", x2 "2", y2 "12" ] []
         , Svg.path [ d "M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" ] []
-        , Svg.line [ x1 "6", y1 "16", x2 "6", y2 "16" ] []
-        , Svg.line [ x1 "10", y1 "16", x2 "10", y2 "16" ] []
+        , Svg.line [ x1 "6", y1 "16", x2 "6.01", y2 "16" ] []
+        , Svg.line [ x1 "10", y1 "16", x2 "10.01", y2 "16" ] []
         ]
 
 
@@ -2030,14 +2098,25 @@ heart =
 
 {-| help-circle
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48cGF0aCBkPSJNOS4wOSA5YTMgMyAwIDAgMSA1LjgzIDFjMCAyLTMgMy0zIDMiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSIxNyIgeDI9IjEyIiB5Mj0iMTciPjwvbGluZT48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48cGF0aCBkPSJNOS4wOSA5YTMgMyAwIDAgMSA1LjgzIDFjMCAyLTMgMy0zIDMiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSIxNyIgeDI9IjEyLjAxIiB5Mj0iMTciPjwvbGluZT48L3N2Zz4=)
 -}
 helpCircle : Icon
 helpCircle =
     makeBuilder "help-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.path [ d "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" ] []
-        , Svg.line [ x1 "12", y1 "17", x2 "12", y2 "17" ] []
+        , Svg.line [ x1 "12", y1 "17", x2 "12.01", y2 "17" ] []
+        ]
+
+
+{-| hexagon
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAxNlY4YTIgMiAwIDAgMC0xLTEuNzNsLTctNGEyIDIgMCAwIDAtMiAwbC03IDRBMiAyIDAgMCAwIDMgOHY4YTIgMiAwIDAgMCAxIDEuNzNsNyA0YTIgMiAwIDAgMCAyIDBsNy00QTIgMiAwIDAgMCAyMSAxNnoiPjwvcGF0aD48L3N2Zz4=)
+-}
+hexagon : Icon
+hexagon =
+    makeBuilder "hexagon"
+        [ Svg.path [ d "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" ] []
         ]
 
 
@@ -2080,27 +2159,27 @@ inbox =
 
 {-| info
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48bGluZSB4MT0iMTIiIHkxPSIxNiIgeDI9IjEyIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSI4Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48bGluZSB4MT0iMTIiIHkxPSIxNiIgeDI9IjEyIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIuMDEiIHkyPSI4Ij48L2xpbmU+PC9zdmc+)
 -}
 info : Icon
 info =
     makeBuilder "info"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
         , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "12" ] []
-        , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "8" ] []
+        , Svg.line [ x1 "12", y1 "8", x2 "12.01", y2 "8" ] []
         ]
 
 
 {-| instagram
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjUiIHJ5PSI1Ij48L3JlY3Q+PHBhdGggZD0iTTE2IDExLjM3QTQgNCAwIDEgMSAxMi42MyA4IDQgNCAwIDAgMSAxNiAxMS4zN3oiPjwvcGF0aD48bGluZSB4MT0iMTcuNSIgeTE9IjYuNSIgeDI9IjE3LjUiIHkyPSI2LjUiPjwvbGluZT48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjUiIHJ5PSI1Ij48L3JlY3Q+PHBhdGggZD0iTTE2IDExLjM3QTQgNCAwIDEgMSAxMi42MyA4IDQgNCAwIDAgMSAxNiAxMS4zN3oiPjwvcGF0aD48bGluZSB4MT0iMTcuNSIgeTE9IjYuNSIgeDI9IjE3LjUxIiB5Mj0iNi41Ij48L2xpbmU+PC9zdmc+)
 -}
 instagram : Icon
 instagram =
     makeBuilder "instagram"
         [ Svg.rect [ Svg.Attributes.x "2", y "2", width "20", height "20", rx "5", ry "5" ] []
         , Svg.path [ d "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" ] []
-        , Svg.line [ x1 "17.5", y1 "6.5", x2 "17.5", y2 "6.5" ] []
+        , Svg.line [ x1 "17.5", y1 "6.5", x2 "17.51", y2 "6.5" ] []
         ]
 
 
@@ -2114,6 +2193,17 @@ italic =
         [ Svg.line [ x1 "19", y1 "4", x2 "10", y2 "4" ] []
         , Svg.line [ x1 "14", y1 "20", x2 "5", y2 "20" ] []
         , Svg.line [ x1 "15", y1 "4", x2 "9", y2 "20" ] []
+        ]
+
+
+{-| key
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAybC0yIDJtLTcuNjEgNy42MWE1LjUgNS41IDAgMSAxLTcuNzc4IDcuNzc4IDUuNSA1LjUgMCAwIDEgNy43NzctNy43Nzd6bTAgMEwxNS41IDcuNW0wIDBsMyAzTDIyIDdsLTMtM20tMy41IDMuNUwxOSA0Ij48L3BhdGg+PC9zdmc+)
+-}
+key : Icon
+key =
+    makeBuilder "key"
+        [ Svg.path [ d "M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" ] []
         ]
 
 
@@ -2199,7 +2289,7 @@ linkedin =
 
 {-| list
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSI4IiB5MT0iNiIgeDI9IjIxIiB5Mj0iNiI+PC9saW5lPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIyMSIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjgiIHkxPSIxOCIgeDI9IjIxIiB5Mj0iMTgiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjYiIHgyPSIzIiB5Mj0iNiI+PC9saW5lPjxsaW5lIHgxPSIzIiB5MT0iMTIiIHgyPSIzIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjE4IiB4Mj0iMyIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSI4IiB5MT0iNiIgeDI9IjIxIiB5Mj0iNiI+PC9saW5lPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIyMSIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjgiIHkxPSIxOCIgeDI9IjIxIiB5Mj0iMTgiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjYiIHgyPSIzLjAxIiB5Mj0iNiI+PC9saW5lPjxsaW5lIHgxPSIzIiB5MT0iMTIiIHgyPSIzLjAxIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjE4IiB4Mj0iMy4wMSIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
 -}
 list : Icon
 list =
@@ -2207,9 +2297,9 @@ list =
         [ Svg.line [ x1 "8", y1 "6", x2 "21", y2 "6" ] []
         , Svg.line [ x1 "8", y1 "12", x2 "21", y2 "12" ] []
         , Svg.line [ x1 "8", y1 "18", x2 "21", y2 "18" ] []
-        , Svg.line [ x1 "3", y1 "6", x2 "3", y2 "6" ] []
-        , Svg.line [ x1 "3", y1 "12", x2 "3", y2 "12" ] []
-        , Svg.line [ x1 "3", y1 "18", x2 "3", y2 "18" ] []
+        , Svg.line [ x1 "3", y1 "6", x2 "3.01", y2 "6" ] []
+        , Svg.line [ x1 "3", y1 "12", x2 "3.01", y2 "12" ] []
+        , Svg.line [ x1 "3", y1 "18", x2 "3.01", y2 "18" ] []
         ]
 
 
@@ -2519,6 +2609,18 @@ moreVertical =
         ]
 
 
+{-| mouse-pointer
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0zIDNsNy4wNyAxNi45NyAyLjUxLTcuMzkgNy4zOS0yLjUxTDMgM3oiPjwvcGF0aD48cGF0aCBkPSJNMTMgMTNsNiA2Ij48L3BhdGg+PC9zdmc+)
+-}
+mousePointer : Icon
+mousePointer =
+    makeBuilder "mouse-pointer"
+        [ Svg.path [ d "M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" ] []
+        , Svg.path [ d "M13 13l6 6" ] []
+        ]
+
+
 {-| move
 
 ![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjUgOSAyIDEyIDUgMTUiPjwvcG9seWxpbmU+PHBvbHlsaW5lIHBvaW50cz0iOSA1IDEyIDIgMTUgNSI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSIxNSAxOSAxMiAyMiA5IDE5Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBwb2ludHM9IjE5IDkgMjIgMTIgMTkgMTUiPjwvcG9seWxpbmU+PGxpbmUgeDE9IjIiIHkxPSIxMiIgeDI9IjIyIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMTIiIHkxPSIyIiB4Mj0iMTIiIHkyPSIyMiI+PC9saW5lPjwvc3ZnPg==)
@@ -2537,13 +2639,14 @@ move =
 
 {-| music
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE3SDVhMiAyIDAgMCAwLTIgMiAyIDIgMCAwIDAgMiAyaDJhMiAyIDAgMCAwIDItMnptMTItMmgtNGEyIDIgMCAwIDAtMiAyIDIgMiAwIDAgMCAyIDJoMmEyIDIgMCAwIDAgMi0yeiI+PC9wYXRoPjxwb2x5bGluZSBwb2ludHM9IjkgMTcgOSA1IDIxIDMgMjEgMTUiPjwvcG9seWxpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE4VjVsMTItMnYxMyI+PC9wYXRoPjxjaXJjbGUgY3g9IjYiIGN5PSIxOCIgcj0iMyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgiIGN5PSIxNiIgcj0iMyI+PC9jaXJjbGU+PC9zdmc+)
 -}
 music : Icon
 music =
     makeBuilder "music"
-        [ Svg.path [ d "M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z" ] []
-        , Svg.polyline [ points "9 17 9 5 21 3 21 15" ] []
+        [ Svg.path [ d "M9 18V5l12-2v13" ] []
+        , Svg.circle [ cx "6", cy "18", r "3" ] []
+        , Svg.circle [ cx "18", cy "16", r "3" ] []
         ]
 
 
@@ -2582,15 +2685,15 @@ octagon =
 
 {-| package
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMi44OSAxLjQ1bDggNEEyIDIgMCAwIDEgMjIgNy4yNHY5LjUzYTIgMiAwIDAgMS0xLjExIDEuNzlsLTggNGEyIDIgMCAwIDEtMS43OSAwbC04LTRhMiAyIDAgMCAxLTEuMS0xLjhWNy4yNGEyIDIgMCAwIDEgMS4xMS0xLjc5bDgtNGEyIDIgMCAwIDEgMS43OCAweiI+PC9wYXRoPjxwb2x5bGluZSBwb2ludHM9IjIuMzIgNi4xNiAxMiAxMSAyMS42OCA2LjE2Ij48L3BvbHlsaW5lPjxsaW5lIHgxPSIxMiIgeTE9IjIyLjc2IiB4Mj0iMTIiIHkyPSIxMSI+PC9saW5lPjxsaW5lIHgxPSI3IiB5MT0iMy41IiB4Mj0iMTciIHkyPSI4LjUiPjwvbGluZT48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIxNi41IiB5MT0iOS40IiB4Mj0iNy41IiB5Mj0iNC4yMSI+PC9saW5lPjxwYXRoIGQ9Ik0yMSAxNlY4YTIgMiAwIDAgMC0xLTEuNzNsLTctNGEyIDIgMCAwIDAtMiAwbC03IDRBMiAyIDAgMCAwIDMgOHY4YTIgMiAwIDAgMCAxIDEuNzNsNyA0YTIgMiAwIDAgMCAyIDBsNy00QTIgMiAwIDAgMCAyMSAxNnoiPjwvcGF0aD48cG9seWxpbmUgcG9pbnRzPSIzLjI3IDYuOTYgMTIgMTIuMDEgMjAuNzMgNi45NiI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSIyMi4wOCIgeDI9IjEyIiB5Mj0iMTIiPjwvbGluZT48L3N2Zz4=)
 -}
 package : Icon
 package =
     makeBuilder "package"
-        [ Svg.path [ d "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" ] []
-        , Svg.polyline [ points "2.32 6.16 12 11 21.68 6.16" ] []
-        , Svg.line [ x1 "12", y1 "22.76", x2 "12", y2 "11" ] []
-        , Svg.line [ x1 "7", y1 "3.5", x2 "17", y2 "8.5" ] []
+        [ Svg.line [ x1 "16.5", y1 "9.4", x2 "7.5", y2 "4.21" ] []
+        , Svg.path [ d "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" ] []
+        , Svg.polyline [ points "3.27 6.96 12 12.01 20.73 6.96" ] []
+        , Svg.line [ x1 "12", y1 "22.08", x2 "12", y2 "12" ] []
         ]
 
 
@@ -2627,6 +2730,20 @@ pause =
     makeBuilder "pause"
         [ Svg.rect [ Svg.Attributes.x "6", y "4", width "4", height "16" ] []
         , Svg.rect [ Svg.Attributes.x "14", y "4", width "4", height "16" ] []
+        ]
+
+
+{-| pen-tool
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMiAxOWw3LTcgMyAzLTcgNy0zLTN6Ij48L3BhdGg+PHBhdGggZD0iTTE4IDEzbC0xLjUtNy41TDIgMmwzLjUgMTQuNUwxMyAxOGw1LTV6Ij48L3BhdGg+PHBhdGggZD0iTTIgMmw3LjU4NiA3LjU4NiI+PC9wYXRoPjxjaXJjbGUgY3g9IjExIiBjeT0iMTEiIHI9IjIiPjwvY2lyY2xlPjwvc3ZnPg==)
+-}
+penTool : Icon
+penTool =
+    makeBuilder "pen-tool"
+        [ Svg.path [ d "M12 19l7-7 3 3-7 7-3-3z" ] []
+        , Svg.path [ d "M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" ] []
+        , Svg.path [ d "M2 2l7.586 7.586" ] []
+        , Svg.circle [ cx "11", cy "11", r "2" ] []
         ]
 
 
@@ -2994,15 +3111,15 @@ send =
 
 {-| server
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyMCIgaGVpZ2h0PSI4IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48cmVjdCB4PSIyIiB5PSIxNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgiIHJ4PSIyIiByeT0iMiI+PC9yZWN0PjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjYiIHkyPSI2Ij48L2xpbmU+PGxpbmUgeDE9IjYiIHkxPSIxOCIgeDI9IjYiIHkyPSIxOCI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyMCIgaGVpZ2h0PSI4IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48cmVjdCB4PSIyIiB5PSIxNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgiIHJ4PSIyIiByeT0iMiI+PC9yZWN0PjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjYuMDEiIHkyPSI2Ij48L2xpbmU+PGxpbmUgeDE9IjYiIHkxPSIxOCIgeDI9IjYuMDEiIHkyPSIxOCI+PC9saW5lPjwvc3ZnPg==)
 -}
 server : Icon
 server =
     makeBuilder "server"
         [ Svg.rect [ Svg.Attributes.x "2", y "2", width "20", height "8", rx "2", ry "2" ] []
         , Svg.rect [ Svg.Attributes.x "2", y "14", width "20", height "8", rx "2", ry "2" ] []
-        , Svg.line [ x1 "6", y1 "6", x2 "6", y2 "6" ] []
-        , Svg.line [ x1 "6", y1 "18", x2 "6", y2 "18" ] []
+        , Svg.line [ x1 "6", y1 "6", x2 "6.01", y2 "6" ] []
+        , Svg.line [ x1 "6", y1 "18", x2 "6.01", y2 "18" ] []
         ]
 
 
@@ -3149,16 +3266,19 @@ skipForward =
 
 {-| slack
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMi4wOCA5QzE5LjgxIDEuNDEgMTYuNTQtLjM1IDkgMS45MlMtLjM1IDcuNDYgMS45MiAxNSA3LjQ2IDI0LjM1IDE1IDIyLjA4IDI0LjM1IDE2LjU0IDIyLjA4IDl6Ij48L3BhdGg+PGxpbmUgeDE9IjEyLjU3IiB5MT0iNS45OSIgeDI9IjE2LjE1IiB5Mj0iMTYuMzkiPjwvbGluZT48bGluZSB4MT0iNy44NSIgeTE9IjcuNjEiIHgyPSIxMS40MyIgeTI9IjE4LjAxIj48L2xpbmU+PGxpbmUgeDE9IjE2LjM5IiB5MT0iNy44NSIgeDI9IjUuOTkiIHkyPSIxMS40MyI+PC9saW5lPjxsaW5lIHgxPSIxOC4wMSIgeTE9IjEyLjU3IiB4Mj0iNy42MSIgeTI9IjE2LjE1Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNC41IDEwYy0uODMgMC0xLjUtLjY3LTEuNS0xLjV2LTVjMC0uODMuNjctMS41IDEuNS0xLjVzMS41LjY3IDEuNSAxLjV2NWMwIC44My0uNjcgMS41LTEuNSAxLjV6Ij48L3BhdGg+PHBhdGggZD0iTTIwLjUgMTBIMTlWOC41YzAtLjgzLjY3LTEuNSAxLjUtMS41czEuNS42NyAxLjUgMS41LS42NyAxLjUtMS41IDEuNXoiPjwvcGF0aD48cGF0aCBkPSJNOS41IDE0Yy44MyAwIDEuNS42NyAxLjUgMS41djVjMCAuODMtLjY3IDEuNS0xLjUgMS41UzggMjEuMzMgOCAyMC41di01YzAtLjgzLjY3LTEuNSAxLjUtMS41eiI+PC9wYXRoPjxwYXRoIGQ9Ik0zLjUgMTRINXYxLjVjMCAuODMtLjY3IDEuNS0xLjUgMS41UzIgMTYuMzMgMiAxNS41IDIuNjcgMTQgMy41IDE0eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNCAxNC41YzAtLjgzLjY3LTEuNSAxLjUtMS41aDVjLjgzIDAgMS41LjY3IDEuNSAxLjVzLS42NyAxLjUtMS41IDEuNWgtNWMtLjgzIDAtMS41LS42Ny0xLjUtMS41eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNS41IDE5SDE0djEuNWMwIC44My42NyAxLjUgMS41IDEuNXMxLjUtLjY3IDEuNS0xLjUtLjY3LTEuNS0xLjUtMS41eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMCA5LjVDMTAgOC42NyA5LjMzIDggOC41IDhoLTVDMi42NyA4IDIgOC42NyAyIDkuNVMyLjY3IDExIDMuNSAxMWg1Yy44MyAwIDEuNS0uNjcgMS41LTEuNXoiPjwvcGF0aD48cGF0aCBkPSJNOC41IDVIMTBWMy41QzEwIDIuNjcgOS4zMyAyIDguNSAyUzcgMi42NyA3IDMuNSA3LjY3IDUgOC41IDV6Ij48L3BhdGg+PC9zdmc+)
 -}
 slack : Icon
 slack =
     makeBuilder "slack"
-        [ Svg.path [ d "M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z" ] []
-        , Svg.line [ x1 "12.57", y1 "5.99", x2 "16.15", y2 "16.39" ] []
-        , Svg.line [ x1 "7.85", y1 "7.61", x2 "11.43", y2 "18.01" ] []
-        , Svg.line [ x1 "16.39", y1 "7.85", x2 "5.99", y2 "11.43" ] []
-        , Svg.line [ x1 "18.01", y1 "12.57", x2 "7.61", y2 "16.15" ] []
+        [ Svg.path [ d "M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z" ] []
+        , Svg.path [ d "M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" ] []
+        , Svg.path [ d "M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z" ] []
+        , Svg.path [ d "M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z" ] []
+        , Svg.path [ d "M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z" ] []
+        , Svg.path [ d "M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z" ] []
+        , Svg.path [ d "M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z" ] []
+        , Svg.path [ d "M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z" ] []
         ]
 
 
@@ -3195,13 +3315,13 @@ sliders =
 
 {-| smartphone
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjUiIHk9IjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMiIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjUiIHk9IjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMi4wMSIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
 -}
 smartphone : Icon
 smartphone =
     makeBuilder "smartphone"
         [ Svg.rect [ Svg.Attributes.x "5", y "2", width "14", height "20", rx "2", ry "2" ] []
-        , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "18" ] []
+        , Svg.line [ x1 "12", y1 "18", x2 "12.01", y2 "18" ] []
         ]
 
 
@@ -3221,14 +3341,14 @@ smile =
 
 {-| speaker
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGNpcmNsZSBjeD0iMTIiIGN5PSIxNCIgcj0iNCI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iNiIgeDI9IjEyIiB5Mj0iNiI+PC9saW5lPjwvc3ZnPg==)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGNpcmNsZSBjeD0iMTIiIGN5PSIxNCIgcj0iNCI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iNiIgeDI9IjEyLjAxIiB5Mj0iNiI+PC9saW5lPjwvc3ZnPg==)
 -}
 speaker : Icon
 speaker =
     makeBuilder "speaker"
         [ Svg.rect [ Svg.Attributes.x "4", y "2", width "16", height "20", rx "2", ry "2" ] []
         , Svg.circle [ cx "12", cy "14", r "4" ] []
-        , Svg.line [ x1 "12", y1 "6", x2 "12", y2 "6" ] []
+        , Svg.line [ x1 "12", y1 "6", x2 "12.01", y2 "6" ] []
         ]
 
 
@@ -3323,25 +3443,25 @@ sunset =
 
 {-| tablet
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgxODAgMTIgMTIpIj48L3JlY3Q+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMiIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGxpbmUgeDE9IjEyIiB5MT0iMTgiIHgyPSIxMi4wMSIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+)
 -}
 tablet : Icon
 tablet =
     makeBuilder "tablet"
-        [ Svg.rect [ Svg.Attributes.x "4", y "2", width "16", height "20", rx "2", ry "2", transform "rotate(180 12 12)" ] []
-        , Svg.line [ x1 "12", y1 "18", x2 "12", y2 "18" ] []
+        [ Svg.rect [ Svg.Attributes.x "4", y "2", width "16", height "20", rx "2", ry "2" ] []
+        , Svg.line [ x1 "12", y1 "18", x2 "12.01", y2 "18" ] []
         ]
 
 
 {-| tag
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMC41OSAxMy40MWwtNy4xNyA3LjE3YTIgMiAwIDAgMS0yLjgzIDBMMiAxMlYyaDEwbDguNTkgOC41OWEyIDIgMCAwIDEgMCAyLjgyeiI+PC9wYXRoPjxsaW5lIHgxPSI3IiB5MT0iNyIgeDI9IjciIHkyPSI3Ij48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMC41OSAxMy40MWwtNy4xNyA3LjE3YTIgMiAwIDAgMS0yLjgzIDBMMiAxMlYyaDEwbDguNTkgOC41OWEyIDIgMCAwIDEgMCAyLjgyeiI+PC9wYXRoPjxsaW5lIHgxPSI3IiB5MT0iNyIgeDI9IjcuMDEiIHkyPSI3Ij48L2xpbmU+PC9zdmc+)
 -}
 tag : Icon
 tag =
     makeBuilder "tag"
         [ Svg.path [ d "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" ] []
-        , Svg.line [ x1 "7", y1 "7", x2 "7", y2 "7" ] []
+        , Svg.line [ x1 "7", y1 "7", x2 "7.01", y2 "7" ] []
         ]
 
 
@@ -3424,6 +3544,17 @@ toggleRight =
     makeBuilder "toggle-right"
         [ Svg.rect [ Svg.Attributes.x "1", y "5", width "22", height "14", rx "7", ry "7" ] []
         , Svg.circle [ cx "16", cy "12", r "3" ] []
+        ]
+
+
+{-| tool
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNC43IDYuM2ExIDEgMCAwIDAgMCAxLjRsMS42IDEuNmExIDEgMCAwIDAgMS40IDBsMy43Ny0zLjc3YTYgNiAwIDAgMS03Ljk0IDcuOTRsLTYuOTEgNi45MWEyLjEyIDIuMTIgMCAwIDEtMy0zbDYuOTEtNi45MWE2IDYgMCAwIDEgNy45NC03Ljk0bC0zLjc2IDMuNzZ6Ij48L3BhdGg+PC9zdmc+)
+-}
+tool : Icon
+tool =
+    makeBuilder "tool"
+        [ Svg.path [ d "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" ] []
         ]
 
 
@@ -3524,6 +3655,17 @@ tv =
     makeBuilder "tv"
         [ Svg.rect [ Svg.Attributes.x "2", y "7", width "20", height "15", rx "2", ry "2" ] []
         , Svg.polyline [ points "17 2 12 7 7 2" ] []
+        ]
+
+
+{-| twitch
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAySDN2MTZoNXY0bDQtNGg1bDQtNFYyem0tMTAgOVY3bTUgNFY3Ij48L3BhdGg+PC9zdmc+)
+-}
+twitch : Icon
+twitch =
+    makeBuilder "twitch"
+        [ Svg.path [ d "M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" ] []
         ]
 
 
@@ -3793,7 +3935,7 @@ watch =
 
 {-| wifi-off
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIxIiB5MT0iMSIgeDI9IjIzIiB5Mj0iMjMiPjwvbGluZT48cGF0aCBkPSJNMTYuNzIgMTEuMDZBMTAuOTQgMTAuOTQgMCAwIDEgMTkgMTIuNTUiPjwvcGF0aD48cGF0aCBkPSJNNSAxMi41NWExMC45NCAxMC45NCAwIDAgMSA1LjE3LTIuMzkiPjwvcGF0aD48cGF0aCBkPSJNMTAuNzEgNS4wNUExNiAxNiAwIDAgMSAyMi41OCA5Ij48L3BhdGg+PHBhdGggZD0iTTEuNDIgOWExNS45MSAxNS45MSAwIDAgMSA0LjctMi44OCI+PC9wYXRoPjxwYXRoIGQ9Ik04LjUzIDE2LjExYTYgNiAwIDAgMSA2Ljk1IDAiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSIyMCIgeDI9IjEyIiB5Mj0iMjAiPjwvbGluZT48L3N2Zz4=)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIxIiB5MT0iMSIgeDI9IjIzIiB5Mj0iMjMiPjwvbGluZT48cGF0aCBkPSJNMTYuNzIgMTEuMDZBMTAuOTQgMTAuOTQgMCAwIDEgMTkgMTIuNTUiPjwvcGF0aD48cGF0aCBkPSJNNSAxMi41NWExMC45NCAxMC45NCAwIDAgMSA1LjE3LTIuMzkiPjwvcGF0aD48cGF0aCBkPSJNMTAuNzEgNS4wNUExNiAxNiAwIDAgMSAyMi41OCA5Ij48L3BhdGg+PHBhdGggZD0iTTEuNDIgOWExNS45MSAxNS45MSAwIDAgMSA0LjctMi44OCI+PC9wYXRoPjxwYXRoIGQ9Ik04LjUzIDE2LjExYTYgNiAwIDAgMSA2Ljk1IDAiPjwvcGF0aD48bGluZSB4MT0iMTIiIHkxPSIyMCIgeDI9IjEyLjAxIiB5Mj0iMjAiPjwvbGluZT48L3N2Zz4=)
 -}
 wifiOff : Icon
 wifiOff =
@@ -3804,13 +3946,13 @@ wifiOff =
         , Svg.path [ d "M10.71 5.05A16 16 0 0 1 22.58 9" ] []
         , Svg.path [ d "M1.42 9a15.91 15.91 0 0 1 4.7-2.88" ] []
         , Svg.path [ d "M8.53 16.11a6 6 0 0 1 6.95 0" ] []
-        , Svg.line [ x1 "12", y1 "20", x2 "12", y2 "20" ] []
+        , Svg.line [ x1 "12", y1 "20", x2 "12.01", y2 "20" ] []
         ]
 
 
 {-| wifi
 
-![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik01IDEyLjU1YTExIDExIDAgMCAxIDE0LjA4IDAiPjwvcGF0aD48cGF0aCBkPSJNMS40MiA5YTE2IDE2IDAgMCAxIDIxLjE2IDAiPjwvcGF0aD48cGF0aCBkPSJNOC41MyAxNi4xMWE2IDYgMCAwIDEgNi45NSAwIj48L3BhdGg+PGxpbmUgeDE9IjEyIiB5MT0iMjAiIHgyPSIxMiIgeTI9IjIwIj48L2xpbmU+PC9zdmc+)
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik01IDEyLjU1YTExIDExIDAgMCAxIDE0LjA4IDAiPjwvcGF0aD48cGF0aCBkPSJNMS40MiA5YTE2IDE2IDAgMCAxIDIxLjE2IDAiPjwvcGF0aD48cGF0aCBkPSJNOC41MyAxNi4xMWE2IDYgMCAwIDEgNi45NSAwIj48L3BhdGg+PGxpbmUgeDE9IjEyIiB5MT0iMjAiIHgyPSIxMi4wMSIgeTI9IjIwIj48L2xpbmU+PC9zdmc+)
 -}
 wifi : Icon
 wifi =
@@ -3818,7 +3960,7 @@ wifi =
         [ Svg.path [ d "M5 12.55a11 11 0 0 1 14.08 0" ] []
         , Svg.path [ d "M1.42 9a16 16 0 0 1 21.16 0" ] []
         , Svg.path [ d "M8.53 16.11a6 6 0 0 1 6.95 0" ] []
-        , Svg.line [ x1 "12", y1 "20", x2 "12", y2 "20" ] []
+        , Svg.line [ x1 "12", y1 "20", x2 "12.01", y2 "20" ] []
         ]
 
 
@@ -3841,6 +3983,19 @@ xCircle : Icon
 xCircle =
     makeBuilder "x-circle"
         [ Svg.circle [ cx "12", cy "12", r "10" ] []
+        , Svg.line [ x1 "15", y1 "9", x2 "9", y2 "15" ] []
+        , Svg.line [ x1 "9", y1 "9", x2 "15", y2 "15" ] []
+        ]
+
+
+{-| x-octagon
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5Z29uIHBvaW50cz0iNy44NiAyIDE2LjE0IDIgMjIgNy44NiAyMiAxNi4xNCAxNi4xNCAyMiA3Ljg2IDIyIDIgMTYuMTQgMiA3Ljg2IDcuODYgMiI+PC9wb2x5Z29uPjxsaW5lIHgxPSIxNSIgeTE9IjkiIHgyPSI5IiB5Mj0iMTUiPjwvbGluZT48bGluZSB4MT0iOSIgeTE9IjkiIHgyPSIxNSIgeTI9IjE1Ij48L2xpbmU+PC9zdmc+)
+-}
+xOctagon : Icon
+xOctagon =
+    makeBuilder "x-octagon"
+        [ Svg.polygon [ points "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" ] []
         , Svg.line [ x1 "15", y1 "9", x2 "9", y2 "15" ] []
         , Svg.line [ x1 "9", y1 "9", x2 "15", y2 "15" ] []
         ]
@@ -4003,7 +4158,9 @@ icons =
     , ( "cloud", cloud )
     , ( "code", code )
     , ( "codepen", codepen )
+    , ( "codesandbox", codesandbox )
     , ( "coffee", coffee )
+    , ( "columns", columns )
     , ( "command", command )
     , ( "compass", compass )
     , ( "copy", copy )
@@ -4035,6 +4192,7 @@ icons =
     , ( "facebook", facebook )
     , ( "fast-forward", fastForward )
     , ( "feather", feather )
+    , ( "figma", figma )
     , ( "file-minus", fileMinus )
     , ( "file-plus", filePlus )
     , ( "file-text", fileText )
@@ -4045,6 +4203,7 @@ icons =
     , ( "folder-minus", folderMinus )
     , ( "folder-plus", folderPlus )
     , ( "folder", folder )
+    , ( "framer", framer )
     , ( "frown", frown )
     , ( "gift", gift )
     , ( "git-branch", gitBranch )
@@ -4060,12 +4219,14 @@ icons =
     , ( "headphones", headphones )
     , ( "heart", heart )
     , ( "help-circle", helpCircle )
+    , ( "hexagon", hexagon )
     , ( "home", home )
     , ( "image", image )
     , ( "inbox", inbox )
     , ( "info", info )
     , ( "instagram", instagram )
     , ( "italic", italic )
+    , ( "key", key )
     , ( "layers", layers )
     , ( "layout", layout )
     , ( "life-buoy", lifeBuoy )
@@ -4097,6 +4258,7 @@ icons =
     , ( "moon", moon )
     , ( "more-horizontal", moreHorizontal )
     , ( "more-vertical", moreVertical )
+    , ( "mouse-pointer", mousePointer )
     , ( "move", move )
     , ( "music", music )
     , ( "navigation-2", navigation2 )
@@ -4106,6 +4268,7 @@ icons =
     , ( "paperclip", paperclip )
     , ( "pause-circle", pauseCircle )
     , ( "pause", pause )
+    , ( "pen-tool", penTool )
     , ( "percent", percent )
     , ( "phone-call", phoneCall )
     , ( "phone-forwarded", phoneForwarded )
@@ -4168,6 +4331,7 @@ icons =
     , ( "thumbs-up", thumbsUp )
     , ( "toggle-left", toggleLeft )
     , ( "toggle-right", toggleRight )
+    , ( "tool", tool )
     , ( "trash-2", trash2 )
     , ( "trash", trash )
     , ( "trello", trello )
@@ -4176,6 +4340,7 @@ icons =
     , ( "triangle", triangle )
     , ( "truck", truck )
     , ( "tv", tv )
+    , ( "twitch", twitch )
     , ( "twitter", twitter )
     , ( "type", type_ )
     , ( "umbrella", umbrella )
@@ -4201,6 +4366,7 @@ icons =
     , ( "wifi", wifi )
     , ( "wind", wind )
     , ( "x-circle", xCircle )
+    , ( "x-octagon", xOctagon )
     , ( "x-square", xSquare )
     , ( "x", x )
     , ( "youtube", youtube )
