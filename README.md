@@ -4,7 +4,7 @@ Embeddable svg icons by https://feathericons.com/
 
 ## Usage
 
-There are two ways of using feather icons in your project. One is friction-free when you don't mind adding a dependency which will include full set of svg icons. Another is more optimat in terms of build size, allowing you to pick selection of svg functions without depending on this package.
+There are two ways of using feather icons in your project. One is friction-free when you don't mind adding a dependency which will include full set of svg icons. Another is more optimal in terms of resulting build size, allowing you to pick a selection of svg functions without depending on this package (perhaps this is obsolete with unused code elimination added from elm 0.19, so go ahead and just add dependency).
 
 If you are building an app, then the best option for you is the first one, just install dependency.
 
