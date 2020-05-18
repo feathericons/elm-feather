@@ -96,9 +96,13 @@ module FeatherIcons
         , database
         , delete
         , disc
+        , divideCircle
+        , divideSquare
+        , divide
         , dollarSign
         , downloadCloud
         , download
+        , dribbble
         , droplet
         , edit2
         , edit3
@@ -326,7 +330,7 @@ If you'd like to use same API while creating personally designed icons, you can 
 
 # Feather Icons List
 
-@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, codesandbox, coffee, columns, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, dollarSign, downloadCloud, download, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, figma, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, framer, frown, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, hexagon, home, image, inbox, info, instagram, italic, key, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, meh, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, mousePointer, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, penTool, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, smile, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, tool, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitch, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xOctagon, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
+@docs activity, airplay, alertCircle, alertOctagon, alertTriangle, alignCenter, alignJustify, alignLeft, alignRight, anchor, aperture, archive, arrowDownCircle, arrowDownLeft, arrowDownRight, arrowDown, arrowLeftCircle, arrowLeft, arrowRightCircle, arrowRight, arrowUpCircle, arrowUpLeft, arrowUpRight, arrowUp, atSign, award, barChart2, barChart, batteryCharging, battery, bellOff, bell, bluetooth, bold, bookOpen, book, bookmark, box, briefcase, calendar, cameraOff, camera, cast, checkCircle, checkSquare, check, chevronDown, chevronLeft, chevronRight, chevronUp, chevronsDown, chevronsLeft, chevronsRight, chevronsUp, chrome, circle, clipboard, clock, cloudDrizzle, cloudLightning, cloudOff, cloudRain, cloudSnow, cloud, code, codepen, codesandbox, coffee, columns, command, compass, copy, cornerDownLeft, cornerDownRight, cornerLeftDown, cornerLeftUp, cornerRightDown, cornerRightUp, cornerUpLeft, cornerUpRight, cpu, creditCard, crop, crosshair, database, delete, disc, divideCircle, divideSquare, divide, dollarSign, downloadCloud, download, dribbble, droplet, edit2, edit3, edit, externalLink, eyeOff, eye, facebook, fastForward, feather, figma, fileMinus, filePlus, fileText, file, film, filter, flag, folderMinus, folderPlus, folder, framer, frown, gift, gitBranch, gitCommit, gitMerge, gitPullRequest, github, gitlab, globe, grid, hardDrive, hash, headphones, heart, helpCircle, hexagon, home, image, inbox, info, instagram, italic, key, layers, layout, lifeBuoy, link2, link, linkedin, list, loader, lock, logIn, logOut, mail, mapPin, map, maximize2, maximize, meh, menu, messageCircle, messageSquare, micOff, mic, minimize2, minimize, minusCircle, minusSquare, minus, monitor, moon, moreHorizontal, moreVertical, mousePointer, move, music, navigation2, navigation, octagon, package, paperclip, pauseCircle, pause, penTool, percent, phoneCall, phoneForwarded, phoneIncoming, phoneMissed, phoneOff, phoneOutgoing, phone, pieChart, playCircle, play, plusCircle, plusSquare, plus, pocket, power, printer, radio, refreshCcw, refreshCw, repeat, rewind, rotateCcw, rotateCw, rss, save, scissors, search, send, server, settings, share2, share, shieldOff, shield, shoppingBag, shoppingCart, shuffle, sidebar, skipBack, skipForward, slack, slash, sliders, smartphone, smile, speaker, square, star, stopCircle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbsDown, thumbsUp, toggleLeft, toggleRight, tool, trash2, trash, trello, trendingDown, trendingUp, triangle, truck, tv, twitch, twitter, type_, umbrella, underline, unlock, uploadCloud, upload, userCheck, userMinus, userPlus, userX, user, users, videoOff, video, voicemail, volume1, volume2, volumeX, volume, watch, wifiOff, wifi, wind, xCircle, xOctagon, xSquare, x, youtube, zapOff, zap, zoomIn, zoomOut
 -}
 
 import Html exposing (Html)
@@ -1599,6 +1603,47 @@ disc =
         ]
 
 
+{-| divide-circle
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIxNiIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTYiIHgyPSIxMiIgeTI9IjE2Ij48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iOCIgeDI9IjEyIiB5Mj0iOCI+PC9saW5lPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48L3N2Zz4=)
+-}
+divideCircle : Icon
+divideCircle =
+    makeBuilder "divide-circle"
+        [ Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
+        , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
+        , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "8" ] []
+        , Svg.circle [ cx "12", cy "12", r "10" ] []
+        ]
+
+
+{-| divide-square
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIHJ5PSIyIj48L3JlY3Q+PGxpbmUgeDE9IjgiIHkxPSIxMiIgeDI9IjE2IiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMTIiIHkxPSIxNiIgeDI9IjEyIiB5Mj0iMTYiPjwvbGluZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSI4Ij48L2xpbmU+PC9zdmc+)
+-}
+divideSquare : Icon
+divideSquare =
+    makeBuilder "divide-square"
+        [ Svg.rect [ Svg.Attributes.x "3", y "3", width "18", height "18", rx "2", ry "2" ] []
+        , Svg.line [ x1 "8", y1 "12", x2 "16", y2 "12" ] []
+        , Svg.line [ x1 "12", y1 "16", x2 "12", y2 "16" ] []
+        , Svg.line [ x1 "12", y1 "8", x2 "12", y2 "8" ] []
+        ]
+
+
+{-| divide
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iNiIgcj0iMiI+PC9jaXJjbGU+PGxpbmUgeDE9IjUiIHkxPSIxMiIgeDI9IjE5IiB5Mj0iMTIiPjwvbGluZT48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIyIj48L2NpcmNsZT48L3N2Zz4=)
+-}
+divide : Icon
+divide =
+    makeBuilder "divide"
+        [ Svg.circle [ cx "12", cy "6", r "2" ] []
+        , Svg.line [ x1 "5", y1 "12", x2 "19", y2 "12" ] []
+        , Svg.circle [ cx "12", cy "18", r "2" ] []
+        ]
+
+
 {-| dollar-sign
 
 ![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIxMiIgeTE9IjEiIHgyPSIxMiIgeTI9IjIzIj48L2xpbmU+PHBhdGggZD0iTTE3IDVIOS41YTMuNSAzLjUgMCAwIDAgMCA3aDVhMy41IDMuNSAwIDAgMSAwIDdINiI+PC9wYXRoPjwvc3ZnPg==)
@@ -1634,6 +1679,18 @@ download =
         [ Svg.path [ d "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" ] []
         , Svg.polyline [ points "7 10 12 15 17 10" ] []
         , Svg.line [ x1 "12", y1 "15", x2 "12", y2 "3" ] []
+        ]
+
+
+{-| dribbble
+
+![image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIj48L2NpcmNsZT48cGF0aCBkPSJNOC41NiAyLjc1YzQuMzcgNi4wMyA2LjAyIDkuNDIgOC4wMyAxNy43Mm0yLjU0LTE1LjM4Yy0zLjcyIDQuMzUtOC45NCA1LjY2LTE2Ljg4IDUuODVtMTkuNSAxLjljLTMuNS0uOTMtNi42My0uODItOC45NCAwLTIuNTguOTItNS4wMSAyLjg2LTcuNDQgNi4zMiI+PC9wYXRoPjwvc3ZnPg==)
+-}
+dribbble : Icon
+dribbble =
+    makeBuilder "dribbble"
+        [ Svg.circle [ cx "12", cy "12", r "10" ] []
+        , Svg.path [ d "M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" ] []
         ]
 
 
@@ -4179,9 +4236,13 @@ icons =
     , ( "database", database )
     , ( "delete", delete )
     , ( "disc", disc )
+    , ( "divide-circle", divideCircle )
+    , ( "divide-square", divideSquare )
+    , ( "divide", divide )
     , ( "dollar-sign", dollarSign )
     , ( "download-cloud", downloadCloud )
     , ( "download", download )
+    , ( "dribbble", dribbble )
     , ( "droplet", droplet )
     , ( "edit-2", edit2 )
     , ( "edit-3", edit3 )
